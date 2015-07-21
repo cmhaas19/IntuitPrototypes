@@ -27,8 +27,12 @@ body {
   border-radius: 0;
   display: block;
 }
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
+}
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #000;
+  background-color: #333;
 }
 .navbar-toggle .icon-bar {
   display: block;
@@ -135,12 +139,14 @@ body {
 }
 .concept-a .navbar {
   height: 50px;
-  padding: 6px 0 7px 0;
   border-bottom: solid 1px #eee;
 }
 .concept-a .brand-wrap {
   height: 50px;
-  border-left: solid 1px #000;
+  border-left: solid 1px #cccccc;
+  margin-left: 20px;
+  padding-left: 20px;
+  float: left;
 }
 .concept-a .navbar-brand {
   display: block;
@@ -148,6 +154,7 @@ body {
   width: 176px;
   background-repeat: no-repeat;
   background-size: cover;
+  float: none;
 }
 .concept-a .navbar-nav > li > a {
   padding: 8px 10px 0 10px;
@@ -160,24 +167,56 @@ body {
   margin-top: 2px;
 }
 .concept-a .navbar-collapse .btn {
-  margin-top: 3px;
+  margin-top: 2px;
   margin-left: 10px;
+}
+.concept-a .brand-wrap,
+.concept-a .navbar-collapse {
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+.concept-a .navbar-toggle {
+  margin-top: 7px;
+}
+.concept-a .btn {
+  padding: 6px 15px;
+}
+.concept-a .btn-primary {
+  color: #fff;
+  background-color: #ff8000;
+  border-color: #ff8000;
+  border-radius: 4px;
+}
+.concept-a .body {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .concept-a.quickbooks .navbar-brand {
   background-image: url('../images/conceptA/qb-logo.png');
 }
-.concept-a.quickbooks .btn {
-  padding: 4px 15px;
+.concept-a.quickbooks .navbar-collapse .btn {
+  margin-top: 3px;
 }
 .concept-a.quickbooks .btn-primary {
-  color: #fff;
   background-color: #2c9e1c;
   border-color: #2c9e1c;
-  border-radius: 1px;
+}
+.concept-a.quickbooks .body {
+  background-image: url('../images/conceptA/qb-body.jpg');
+  height: 2390px;
 }
 .concept-a.turbotax .navbar-brand {
   background-image: url('../images/conceptA/tt-logo.png');
 }
+.concept-a.turbotax .body {
+  background-image: url('../images/conceptA/tt-body.jpg');
+  height: 6582px;
+}
 .concept-a.mint .navbar-brand {
   background-image: url('../images/conceptA/mint-logo.png');
+}
+.concept-a.mint .body {
+  background-image: url('../images/conceptA/mint-body.jpg');
+  height: 2390px;
 }
