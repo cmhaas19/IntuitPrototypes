@@ -10,10 +10,21 @@
 
             $routeProvider
                 .when("/concept/a/quickbooks", { 
-                    templateUrl: "/app/views/conceptA/quickbooks.html", 
+                    templateUrl: "/app/views/conceptA/index.html", 
                     title: 'Concept A - Quickbooks', 
                     bodyClass: 'concept-a quickbooks' 
                 })
+                .when("/concept/a/mint", { 
+                    templateUrl: "/app/views/conceptA/index.html", 
+                    title: 'Concept A - Mint', 
+                    bodyClass: 'concept-a mint' 
+                })
+                .when("/concept/a/turbotax", { 
+                    templateUrl: "/app/views/conceptA/index.html", 
+                    title: 'Concept A - TurboTax', 
+                    bodyClass: 'concept-a turbotax' 
+                })
+
 
                 .otherwise({ 
                     templateUrl: "/app/views/home.html", 

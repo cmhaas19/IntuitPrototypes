@@ -1,6 +1,52 @@
 
 body {
-	
+	color: #333;
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #080808;
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #333;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar-toggle {
+  float: left;
+  padding: 9px 10px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 0;
+}
+
+.navbar>.container .navbar-brand, 
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
 }
 
 .prototype-footer {
@@ -39,8 +85,8 @@ body {
 
 				a {
 					display: block;
-					border-top: solid 10px #000;
-					padding-bottom: 10px;
+					border-top: solid 5px #000;
+					padding-bottom: 5px;
 					color: #fff;
 					text-align: center;
 					text-decoration: none;
@@ -49,7 +95,7 @@ body {
 
 					&.active,
 					&:hover {
-						border-top: solid 10px #f34866;
+						border-top: solid 5px #f34866;
 					}
 				}
 			}
@@ -63,5 +109,5 @@ body {
 .concept-d .prototype-footer a.nav-concept-d,
 .concept-e .prototype-footer a.nav-concept-e,
 .concept-home .prototype-footer a.nav-concept-home {
-	border-top: solid 10px #f34866;
+	border-top: solid 5px #f34866;
 }

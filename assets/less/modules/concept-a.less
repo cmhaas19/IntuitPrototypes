@@ -1,0 +1,65 @@
+
+.concept-a {
+	font-family: Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+
+	.navbar {
+	  height: 50px;
+	  padding: 6px 0 7px 0;
+	  border-bottom: solid 1px gray;
+	}
+
+	.navbar-brand {
+		display: block;
+		height: 37px;
+		width: 176px;		
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.navbar-nav>li>a {
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	  cursor: pointer;
+
+	  &:hover {
+	  	color: inherit;
+	  }
+	}
+
+	.navbar-nav {
+		margin-top: 2px;
+	}
+}
+
+.concept-a.quickbooks {
+		
+	.navbar-brand {
+		background-image: url('../images/conceptA/qb-logo.png');
+	}
+
+	.btn {
+		padding: 4px 15px;
+	}
+
+	.btn-primary {
+	  color: #fff;
+	  background-color: @quickbooks-green;
+	  border-color: @quickbooks-green;
+	  border-radius: 1px;
+	}
+}
+
+.concept-a.turbotax {
+		
+	.navbar-brand {
+		background-image: url('../images/conceptA/tt-logo.png');
+	}
+}
+
+.concept-a.mint {
+		
+	.navbar-brand {
+		background-image: url('../images/conceptA/mint-logo.png');
+	}
+}
