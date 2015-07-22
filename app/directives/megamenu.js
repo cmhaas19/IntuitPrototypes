@@ -11,33 +11,44 @@
             },
             controller: ['$scope', '$element', function ($scope, $element) {
                 
+
+
             }],
             link: function(scope, element, attrs) {
                 var $toggleButton = $(scope.toggleButton),
                     $header = $(".page-header"),
-                    left = $toggleButton.position().left,
-                    top = element.height() + $header.height();
+                    left = $toggleButton.position().left - 15,
+                    top = element.outerHeight();
 
                 element.css({ 'left': left, top: -top });
-                element.hidden = true;
+                scope.hidden = true;
 
-                $toggleButton.on("click", function(e){
+                $toggleButton.on("click.megamenu", function(e){
                     e.preventDefault();
+
                     $toggleButton.toggleClass("collapsed");
 
-                    if(element.hidden === true) {
+                    if(scope.hidden === true) {
                         element.animate({
                             top: $header.height()
                         }, 500, function(){
-                            element.hidden = false;
+                            scope.hidden = false;
                         });
                     } else {
                         element.animate({
                             top: -top
                         }, 500, function(){
-                            element.hidden = true;
+                            scope.hidden = true;
                         });
                     }
+                });
+
+                scope.$on('$destroy', function () {
+                    $toggleButton.off("click.megamenu");
+                });
+
+                $(window).on("resize", function(){
+                    // TODO: Recalibrate element's height and hidden 'top' position
                 });
             }
         }        

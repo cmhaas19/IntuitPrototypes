@@ -148,6 +148,10 @@ body {
 .navbar-toggle.collapsed .bottom-bar {
   transform: rotate(0);
 }
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
   margin-left: 0;
@@ -214,6 +218,9 @@ body {
 .concept-home .prototype-footer a.nav-concept-home {
   border-top: solid 5px #f34866;
 }
+.qb-green {
+  color: #2c9e1c;
+}
 @font-face {
   font-family: Avenir;
   src: url(../fonts/avenir/AvenirLT-Light.eot);
@@ -255,16 +262,54 @@ body {
 .megamenu .menu-column-list {
   list-style-type: none;
   padding-left: 0;
-  margin: 0 20px;
+  margin: 0 10px;
+  border-right: solid 1px #d9d9d9;
+  height: 245px;
+}
+.megamenu .menu-column-list.borderless {
+  border-right: none;
 }
 .megamenu .menu-column-list li {
   margin-bottom: 7px;
 }
 .megamenu .menu-column-list li a {
   color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+.megamenu .menu-column-list li a:hover {
+  color: #2c9e1c;
 }
 .megamenu .menu-column-list li strong {
   font-weight: 600;
+}
+.megamenu .menu-column-list .brand {
+  display: block;
+  margin-bottom: 30px;
+}
+.megamenu .menu-column-list .brand img {
+  display: block;
+}
+.megamenu .menu-column-list .brand span {
+  display: block;
+  margin-bottom: 7px;
+}
+.megamenu .menu-column-list .brand.intuit {
+  margin-bottom: 25px;
+}
+.megamenu .menu-column-list .brand.intuit img {
+  height: 22px;
+  width: 74px;
+  margin-bottom: 10px;
+}
+.megamenu .menu-column-list .brand.mint img {
+  height: 32px;
+  width: 79px;
+}
+.megamenu .menu-column-list .brand.turbotax img {
+  height: 29px;
+  width: 132px;
 }
 .concept-a {
   font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
