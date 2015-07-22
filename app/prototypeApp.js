@@ -3,9 +3,10 @@
 (function () {
     'use strict';
 
+    angular.module("prototype.Directives", []);
     angular.module("prototype.Controllers", []);
 
-    angular.module("prototypeApp", ["ngRoute", "prototype.Controllers"])
+    angular.module("prototypeApp", ["ngRoute", "ngAnimate", "prototype.Directives", "prototype.Controllers"])
         .config(['$routeProvider', function ($routeProvider) {
 
             $routeProvider
