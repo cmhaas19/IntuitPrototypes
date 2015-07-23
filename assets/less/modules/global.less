@@ -1,4 +1,6 @@
 
+@import "mixins";
+
 body {
 	color: #333;
 }
@@ -74,28 +76,28 @@ body {
 	}
 
 	.top-bar {
-		transform: rotate(45deg);
-		transform-origin: 10% 10%;
+		.transform( rotate(45deg) );
+		.transform-origin( 10%, 10% );
 	}
 
 	.middle-bar {
-		opacity: 0;
+		.opacity(0);
 	}
 
 	.bottom-bar {
-		transform: rotate(-45deg);
-		transform-origin: 10% 90%;
+		.transform( rotate(-45deg) );
+		.transform-origin(10%, 90%);
 	}
 
 	&.collapsed {
 	    .top-bar {
-	      transform: rotate(0);      
+	      .transform(rotate(0));      
 	    }
 	    .middle-bar {
-	      opacity: 1;
+	      .opacity(1);
 	    }
 	    .bottom-bar {
-	      transform: rotate(0);
+	      .transform(rotate(0));
 	    }
 	}
 }

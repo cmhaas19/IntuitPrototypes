@@ -133,24 +133,46 @@ body {
   transition: all 0.5s;
 }
 .navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+  -moz-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  -o-transform-origin: 10% 10%;
 }
 .navbar-toggle .middle-bar {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
   opacity: 0;
 }
 .navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+  -moz-transform-origin: 10% 90%;
+  -ms-transform-origin: 10% 90%;
+  -o-transform-origin: 10% 90%;
 }
 .navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
 }
 .navbar-toggle.collapsed .middle-bar {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
 }
 .navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
 }
 .navbar-collapse {
   padding-right: 0;
