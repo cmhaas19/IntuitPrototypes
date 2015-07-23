@@ -14,12 +14,26 @@
 	.menu-column-list {
 		list-style-type: none;
 		padding-left: 0;
-		margin: 0 10px;
-		border-right: solid 1px #d9d9d9;	
-		height: 245px;
+		padding: 0 15px 0 25px;
+		border-left: solid 1px #d9d9d9;	
+		min-height: 245px;
+		box-sizing: border-box;
+		width: 25%;
+		float: left;
+
+		&:first-child {
+			border-left: none;
+			padding-left: 15px;
+		}
 
 		&.borderless {
 			border-right: none;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 8px;
+			margin-top: 6px;
 		}
 
 		li {
@@ -39,7 +53,17 @@
 			strong {
 				font-weight: 600;
 			}
+
+			&.brand:last-child {
+				margin-bottom: 10px;
+			}
+
+			&.spacer {
+				margin-bottom: 30px;
+			}
 		}
+
+
 
 		.brand {
 			display: block;
@@ -72,13 +96,34 @@
 			}
 
 			&.turbotax {
-				
-
 				img {
 					height: 29px;
 					width: 132px;
 				}
 			}
+
+			&.quickbooks {
+				img {
+					height: 27px;
+					width: 149px;
+				}
+			}
 		}
 	}
 }
+
+.turbotax .megamenu .menu-column-list {
+	width: 20%;
+
+	li a:hover {
+		color: @blue10;
+	}
+}
+
+.mint .megamenu .menu-column-list {
+	
+	li a:hover {
+		color: @mint-green;
+	}
+}
+

@@ -16,11 +16,17 @@
             }],
             link: function(scope, element, attrs) {
                 var $toggleButton = $(scope.toggleButton),
-                    $header = $(".page-header"),
-                    left = $toggleButton.position().left - 15,
-                    top = element.outerHeight();
+                    $header = $(".page-header");
 
-                element.css({ 'left': left, top: -top });
+                var positionMenu = function(){
+                    var left = $toggleButton.position().left - 15,
+                        top = ( element.outerHeight() - 50 ) * -1;
+
+                    element.css({ 'left': left, top: top });
+                };
+
+                positionMenu();
+
                 scope.hidden = true;
 
                 $toggleButton.on("click.megamenu", function(e){
@@ -31,13 +37,13 @@
                     if(scope.hidden === true) {
                         element.animate({
                             top: $header.height()
-                        }, 500, function(){
+                        }, 500, function() {
                             scope.hidden = false;
                         });
                     } else {
                         element.animate({
-                            top: -top
-                        }, 500, function(){
+                            top: ( element.outerHeight() - 50 ) * -1
+                        }, 500, function() {
                             scope.hidden = true;
                         });
                     }
@@ -48,7 +54,7 @@
                 });
 
                 $(window).on("resize", function(){
-                    // TODO: Recalibrate element's height and hidden 'top' position
+                    positionMenu();
                 });
             }
         }        

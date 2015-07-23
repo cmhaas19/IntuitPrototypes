@@ -18,6 +18,10 @@ body {
 .page-body {
 	position: relative;
 	z-index: 90;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center top;
 }
 
 .navbar-inverse {
@@ -174,3 +178,23 @@ body {
 .qb-green {
 	color: @quickbooks-green;
 }
+
+.mint-green {
+	color: @mint-green;
+}
+
+.blue {
+	color: @blue10;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+	& > [class^="col-"],
+	& > [class*=" col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
