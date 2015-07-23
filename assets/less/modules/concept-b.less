@@ -1,0 +1,124 @@
+
+@import "variables.less";
+@import "mixins.less";
+
+.concept-b {
+	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+
+	.navbar {
+		height: 80px;
+	}
+
+	&.quickbooks {
+		.navbar {
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.navbar-brand {
+			background-image: url('../images/conceptA/qb-logo.png');
+		}
+		.navbar-collapse .btn {
+			margin-top: 3px;
+		}
+
+		.btn-primary {
+			background-color: @quickbooks-green;
+			border-color: @quickbooks-green;
+		}
+	}
+	&.turbotax {
+		.navbar-brand {
+			background-image: url('../images/conceptA/tt-logo.png');
+		}
+		.btn {
+			padding: 6px 25px;
+		}
+	}
+	&.mint {
+		.navbar-brand {
+			background-image: url('../images/conceptA/mint-logo.png');
+		}
+	}
+
+	.brand-header {
+		background-color: #fff;
+		height: 50px;
+	}
+
+	.brand-menu {
+		float: left;
+		list-style-type: none;
+		padding-left: 0;
+		.clearfix();
+
+		li {
+			border-top: solid 5px #fff;			
+			border-right: solid 1px #eaebee;
+			float: left;
+
+			&:first-child {
+				border-left: solid 1px #eaebee;
+			}
+
+			a {
+				display: block;
+				padding: 10px 20px 10px 20px;
+				text-decoration: none;
+			}
+
+			&.active {
+				border-top-color: @blue20;
+			}
+		}
+	}
+
+	.safe-secure {
+		float: right;
+		display: block;
+		padding: 10px 20px 10px 20px;
+
+		.fa {
+			margin-right: 10px;
+		}
+	}
+
+	.page-footer {
+		background-color: #eaebee;
+		border-top: solid 5px #d2d4da;
+		border-bottom: solid 10px #0077c5;
+		padding: 30px 0;
+		font-size: 12px;
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			.clearfix();
+
+			li {
+				float: left;
+			}
+
+			&.social {
+				li {
+					margin-right: 10px;
+
+					a {
+						display: block;
+						padding: 3px 8px;
+						background-color: #fff;
+						font-size: 18px;
+						border-radius: 4px;
+					}
+				}
+			}
+		}
+
+		.page-footer-right {
+			float: right;
+		}
+	}
+
+
+}
+

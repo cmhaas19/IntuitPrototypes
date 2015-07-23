@@ -458,3 +458,109 @@ body {
 .concept-a.mint .navbar-brand {
   background-image: url('../images/conceptA/mint-logo.png');
 }
+.concept-b {
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.concept-b .navbar {
+  height: 80px;
+}
+.concept-b.quickbooks .navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.concept-b.quickbooks .navbar-brand {
+  background-image: url('../images/conceptA/qb-logo.png');
+}
+.concept-b.quickbooks .navbar-collapse .btn {
+  margin-top: 3px;
+}
+.concept-b.quickbooks .btn-primary {
+  background-color: #2c9e1c;
+  border-color: #2c9e1c;
+}
+.concept-b.turbotax .navbar-brand {
+  background-image: url('../images/conceptA/tt-logo.png');
+}
+.concept-b.turbotax .btn {
+  padding: 6px 25px;
+}
+.concept-b.mint .navbar-brand {
+  background-image: url('../images/conceptA/mint-logo.png');
+}
+.concept-b .brand-header {
+  background-color: #fff;
+  height: 50px;
+}
+.concept-b .brand-menu {
+  float: left;
+  list-style-type: none;
+  padding-left: 0;
+}
+.concept-b .brand-menu:before,
+.concept-b .brand-menu:after {
+  content: " ";
+  display: table;
+}
+.concept-b .brand-menu:after {
+  clear: both;
+}
+.concept-b .brand-menu li {
+  border-top: solid 5px #fff;
+  border-right: solid 1px #eaebee;
+  float: left;
+}
+.concept-b .brand-menu li:first-child {
+  border-left: solid 1px #eaebee;
+}
+.concept-b .brand-menu li a {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.concept-b .brand-menu li.active {
+  border-top-color: #0077c5;
+}
+.concept-b .safe-secure {
+  float: right;
+  display: block;
+  padding: 10px 20px 10px 20px;
+}
+.concept-b .safe-secure .fa {
+  margin-right: 10px;
+}
+.concept-b .page-footer {
+  background-color: #eaebee;
+  border-top: solid 5px #d2d4da;
+  border-bottom: solid 10px #0077c5;
+  padding: 30px 0;
+  font-size: 12px;
+}
+.concept-b .page-footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.concept-b .page-footer ul:before,
+.concept-b .page-footer ul:after {
+  content: " ";
+  display: table;
+}
+.concept-b .page-footer ul:after {
+  clear: both;
+}
+.concept-b .page-footer ul li {
+  float: left;
+}
+.concept-b .page-footer ul.social li {
+  margin-right: 10px;
+}
+.concept-b .page-footer ul.social li a {
+  display: block;
+  padding: 3px 8px;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.concept-b .page-footer .page-footer-right {
+  float: right;
+}

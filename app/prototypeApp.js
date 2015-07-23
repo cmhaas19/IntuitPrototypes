@@ -25,6 +25,11 @@
                     title: 'Concept A - TurboTax', 
                     bodyClass: 'concept-a turbotax'
                 })
+                .when("/concept/b/quickbooks", { 
+                    templateUrl: "/app/views/conceptB/quickbooks.html", 
+                    title: 'Concept B - Quickbooks', 
+                    bodyClass: 'concept-b quickbooks'
+                })
                 .otherwise({ 
                     templateUrl: "/app/views/home.html", 
                     bodyClass: 'concept-home' 
