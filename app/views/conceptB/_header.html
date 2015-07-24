@@ -31,12 +31,16 @@
 
 <script type="text/ng-template" id="securityModal.html">
     <div class="modal-header">
-	    <button type="button" class="close" ng-click="rootCtrl.closeSecurityModal()"><span>&times;</span></button>
+	    <button type="button" class="close" ng-click="close()"><span>&times;</span></button>
     </div>
     <div class="modal-body">
-        <h3>Security is at the heart of Intuit</h3>
+    	<div class="text-center">
+    		<img src="/assets/images/lock-blue-150x170.png" style="width: 35px; height: 40px;" />
+    	</div>
+        <h3 class="title">Security is at the heart of Intuit</h3>
         <p>
         	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, leo quis dapibus dignissim, tellus libero tincidunt sem, sed elementum purus massa sit amet sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec bibendum posuere nulla, vel consectetur libero. Phasellus eget bibendum sapien, varius tincidunt urna.
         </p>
     </div>
+    <div class="modal-footer"></div>
 </script>

@@ -6,13 +6,10 @@
 
         vm.openSecurityModal = function(){
     		$modal.open({
-		      templateUrl: 'securityModal.html'
+		      templateUrl: 'securityModal.html',
+		      controller: 'modalCtrl',
 		    });
         };
-
-        vm.closeSecurityModal = function(){
-    		$modal.close();
-        }
         
     };
 
