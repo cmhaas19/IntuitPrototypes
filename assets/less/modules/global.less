@@ -158,9 +158,8 @@ body,
 
 				&:last-child {
 					width: 10%;
-					a {
-						font-size: 18px;
-					}
+					height: 50px;
+					
 				}
 
 				a {
@@ -176,6 +175,19 @@ body,
 					&.active,
 					&:hover {
 						border-top: solid 5px #f34866;
+					}
+				}
+
+				.bar {
+					display: block; 
+					height: 3px;
+					width: 20px;
+					margin: 0 auto 2px auto;
+					border-radius: 4px;
+					background-color: #fff;
+
+					&:first-child {
+						margin-top: 15px;
 					}
 				}
 			}
