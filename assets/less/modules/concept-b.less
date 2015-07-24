@@ -125,6 +125,62 @@
 		}
 	}
 
+	.intuit-menu {
+		display: none;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		float: right;
+		.clearfix();
+
+		li {
+			float: left;
+
+			a.icon {
+				display: block;
+				cursor: pointer;
+				background-repeat: no-repeat;
+				background-position: center center;
+				height: 40px;
+				width: 35px;
+
+				&.cart {
+					background-image: url(../images/conceptB/cart-blue-40x34.png);
+					background-size: 20px 17px;					
+				}
+
+				&.globe {
+					background-image: url(../images/conceptB/globe-blue-34x34.png);
+					background-size: 17px 17px;					
+				}
+
+				&.lock {
+					background-image: url(../images/lock-blue-45x51.png);
+					background-size: 15px 17px;					
+				}
+			}
+
+			.signup {
+				font-weight: 600;
+				display: inline-block;
+				margin: 12px 10px 0 15px;
+			}
+
+			.btn-primary {
+				background-color: @orange10;
+				border-color: @orange10;
+				text-transform: uppercase;
+				margin-top: 6px;
+				margin-left: 15px;
+				padding: 5px 12px;
+			}
+		}
+	}
+
+	&.intuit .intuit-menu {
+		display: block;
+	}
+
 	.page-footer {
 		background-color: #eaebee;
 		border-top: solid 5px #d2d4da;

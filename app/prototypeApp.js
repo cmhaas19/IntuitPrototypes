@@ -4,9 +4,9 @@
     'use strict';
 
     angular.module("prototype.Directives", []);
-    angular.module("prototype.Controllers", []);
+    angular.module("prototype.Controllers", ["ui.bootstrap"]);
 
-    angular.module("prototypeApp", ["ngRoute", "prototype.Directives", "prototype.Controllers"])
+    angular.module("prototypeApp", ["ngRoute", "ui.bootstrap", "prototype.Directives", "prototype.Controllers"])
         .config(['$routeProvider', function ($routeProvider) {
 
             $routeProvider

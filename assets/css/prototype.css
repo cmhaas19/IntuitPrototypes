@@ -249,6 +249,17 @@ body,
 .prototype-footer nav ul li a:hover {
   border-top: solid 5px #f34866;
 }
+.modal-content {
+  border-radius: 0;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-body {
+  font-family: Avenir, sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
 .concept-a .prototype-footer a.nav-concept-a,
 .concept-b .prototype-footer a.nav-concept-b,
 .concept-c .prototype-footer a.nav-concept-c,
@@ -620,6 +631,60 @@ body,
   margin-right: 10px;
   position: relative;
   top: -2px;
+}
+.concept-b .intuit-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.concept-b .intuit-menu:before,
+.concept-b .intuit-menu:after {
+  content: " ";
+  display: table;
+}
+.concept-b .intuit-menu:after {
+  clear: both;
+}
+.concept-b .intuit-menu li {
+  float: left;
+}
+.concept-b .intuit-menu li a.icon {
+  display: block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40px;
+  width: 35px;
+}
+.concept-b .intuit-menu li a.icon.cart {
+  background-image: url(../images/conceptB/cart-blue-40x34.png);
+  background-size: 20px 17px;
+}
+.concept-b .intuit-menu li a.icon.globe {
+  background-image: url(../images/conceptB/globe-blue-34x34.png);
+  background-size: 17px 17px;
+}
+.concept-b .intuit-menu li a.icon.lock {
+  background-image: url(../images/lock-blue-45x51.png);
+  background-size: 15px 17px;
+}
+.concept-b .intuit-menu li .signup {
+  font-weight: 600;
+  display: inline-block;
+  margin: 12px 10px 0 15px;
+}
+.concept-b .intuit-menu li .btn-primary {
+  background-color: #ff8000;
+  border-color: #ff8000;
+  text-transform: uppercase;
+  margin-top: 6px;
+  margin-left: 15px;
+  padding: 5px 12px;
+}
+.concept-b.intuit .intuit-menu {
+  display: block;
 }
 .concept-b .page-footer {
   background-color: #eaebee;
