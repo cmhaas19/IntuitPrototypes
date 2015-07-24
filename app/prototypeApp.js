@@ -6,22 +6,22 @@
     angular.module("prototype.Directives", []);
     angular.module("prototype.Controllers", ["ui.bootstrap"]);
 
-    angular.module("prototypeApp", ["ngRoute", "ui.bootstrap", "prototype.Directives", "prototype.Controllers"])
+    angular.module("prototypeApp", ["ngRoute", "ngAnimate", "ui.bootstrap", "prototype.Directives", "prototype.Controllers"])
         .config(['$routeProvider', function ($routeProvider) {
 
             $routeProvider
-                .when("/concept/a/quickbooks", { templateUrl: "/app/views/conceptA/quickbooks.html", title: 'Concept A - Quickbooks', bodyClass: 'concept-a quickbooks' })
-                .when("/concept/a/mint", { templateUrl: "/app/views/conceptA/mint.html", title: 'Concept A - Mint', bodyClass: 'concept-a mint' })
-                .when("/concept/a/turbotax", { templateUrl: "/app/views/conceptA/turbotax.html", title: 'Concept A - TurboTax', bodyClass: 'concept-a turbotax' })
+                .when("/concept/a/intuit", { templateUrl: "/app/views/a-nav1/intuit.html", title: 'Nav1 - Intuit', bodyClass: 'menu-a nav1 intuit' })
+                .when("/concept/a/quickbooks", { templateUrl: "/app/views/a-nav1/quickbooks.html", title: 'Nav1 - Quickbooks', bodyClass: 'menu-a nav1 quickbooks' })
+                .when("/concept/a/mint", { templateUrl: "/app/views/a-nav1/mint.html", title: 'Nav1 - Mint', bodyClass: 'menu-a nav1 mint' })
+                .when("/concept/a/turbotax", { templateUrl: "/app/views/a-nav1/turbotax.html", title: 'Nav1 - TurboTax', bodyClass: 'menu-a nav1 turbotax' })
 
-                .when("/concept/b/intuit", { templateUrl: "/app/views/conceptB/intuit.html", title: 'Concept B - Intuit', bodyClass: 'concept-b intuit' })
-                .when("/concept/b/quickbooks", { templateUrl: "/app/views/conceptB/quickbooks.html", title: 'Concept B - Quickbooks', bodyClass: 'concept-b quickbooks' })
-                .when("/concept/b/turbotax", { templateUrl: "/app/views/conceptB/turbotax.html", title: 'Concept B - TurboTax', bodyClass: 'concept-b turbotax' })
-                .when("/concept/b/mint", { templateUrl: "/app/views/conceptB/mint.html", title: 'Concept B - Mint', bodyClass: 'concept-b mint' })
-
-                .when("/concept/c/quickbooks", { templateUrl: "/app/views/conceptC/quickbooks.html", title: 'Concept C - Quickbooks', bodyClass: 'concept-c quickbooks' })
-                .when("/concept/c/turbotax", { templateUrl: "/app/views/conceptC/turbotax.html", title: 'Concept C - TurboTax', bodyClass: 'concept-c turbotax' })
-                .when("/concept/c/mint", { templateUrl: "/app/views/conceptC/mint.html", title: 'Concept C - Mint', bodyClass: 'concept-c mint' })
+                .when("/concept/b/quickbooks", { templateUrl: "/app/views/b-nav2/quickbooks.html", title: 'Nav2 - Quickbooks', bodyClass: 'menu-b nav2 quickbooks' })
+                .when("/concept/b/turbotax", { templateUrl: "/app/views/b-nav2/turbotax.html", title: 'Nav2 - TurboTax', bodyClass: 'menu-bnav2 turbotax' })
+                .when("/concept/b/mint", { templateUrl: "/app/views/b-nav2/mint.html", title: 'Nav2 - Mint', bodyClass: 'menu-bnav2 mint' })
+                
+                .when("/concept/d/quickbooks", { templateUrl: "/app/views/d-secondary-nav/quickbooks.html", title: 'Secondary Nav - Quickbooks', bodyClass: 'menu-d secondary-nav quickbooks' })
+                .when("/concept/d/turbotax", { templateUrl: "/app/views/d-secondary-nav/turbotax.html", title: 'Secondary Nav - TurboTax', bodyClass: 'menu-d secondary-nav turbotax' })
+                .when("/concept/d/mint", { templateUrl: "/app/views/d-secondary-nav/mint.html", title: 'Secondary Nav - Mint', bodyClass: 'menu-d secondary-nav mint' })                
                 
                 .otherwise({ 
                     templateUrl: "/app/views/home.html", 

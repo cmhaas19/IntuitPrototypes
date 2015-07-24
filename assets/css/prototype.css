@@ -258,12 +258,11 @@ body,
 .prototype-footer nav ul li .bar:first-child {
   margin-top: 15px;
 }
-.concept-a .prototype-footer a.nav-concept-a,
-.concept-b .prototype-footer a.nav-concept-b,
-.concept-c .prototype-footer a.nav-concept-c,
-.concept-d .prototype-footer a.nav-concept-d,
-.concept-e .prototype-footer a.nav-concept-e,
-.concept-home .prototype-footer a.nav-concept-home {
+.menu-a .prototype-footer a.nav-concept-a,
+.menu-b .prototype-footer a.nav-concept-b,
+.menu-c .prototype-footer a.nav-concept-c,
+.menu-d .prototype-footer a.nav-concept-d,
+.menu-e .prototype-footer a.nav-concept-e {
   border-top: solid 5px #f34866;
 }
 .qb-green {
@@ -461,120 +460,45 @@ body,
 .modal-footer {
   border-top: none;
 }
-.concept-a {
+.nav1 {
   font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
-.concept-a .navbar {
-  height: 50px;
-}
-.concept-a .brand-wrap {
-  height: 50px;
-  border-left: solid 1px #cccccc;
-  margin-left: 20px;
-  padding-left: 20px;
-  float: left;
-}
-.concept-a .navbar-brand {
-  display: block;
-  height: 37px;
-  width: 176px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  float: none;
-}
-.concept-a .navbar-nav > li > a {
-  padding: 8px 10px 0 10px;
-  cursor: pointer;
-}
-.concept-a .navbar-nav > li > a:hover {
-  color: inherit;
-}
-.concept-a .navbar-nav {
-  margin-top: 2px;
-}
-.concept-a .navbar-collapse .btn {
-  margin-top: 2px;
-  margin-left: 10px;
-}
-.concept-a .brand-wrap,
-.concept-a .navbar-collapse {
-  padding-top: 6px;
-  padding-bottom: 7px;
-}
-.concept-a .navbar-toggle {
-  margin-top: 7px;
-}
-.concept-a .btn {
-  padding: 6px 15px;
-}
-.concept-a .btn-primary {
-  color: #fff;
-  background-color: #ff8000;
-  border-color: #ff8000;
-  border-radius: 4px;
-}
-.concept-a .btn-primary .fa {
-  margin-right: 8px;
-}
-.concept-a.quickbooks .navbar-brand {
-  background-image: url('../images/conceptA/qb-logo.png');
-}
-.concept-a.quickbooks .navbar-collapse .btn {
-  margin-top: 3px;
-}
-.concept-a.quickbooks .btn-primary {
-  background-color: #2c9e1c;
-  border-color: #2c9e1c;
-}
-.concept-a.turbotax .navbar-brand {
-  background-image: url('../images/conceptA/tt-logo.png');
-}
-.concept-a.turbotax .btn {
-  padding: 6px 25px;
-}
-.concept-a.mint .navbar-brand {
-  background-image: url('../images/conceptA/mint-logo.png');
-}
-.concept-b {
-  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
-.concept-b .navbar {
+.nav1 .navbar {
   height: 80px;
 }
-.concept-b.quickbooks .brand-menu li.quickbooks a,
-.concept-b.turbotax .brand-menu li.turbotax a,
-.concept-b.mint .brand-menu li.mint a {
+.nav1.quickbooks .brand-menu li.quickbooks a,
+.nav1.turbotax .brand-menu li.turbotax a,
+.nav1.mint .brand-menu li.mint a {
   border-top-color: #0077c5;
 }
-.concept-b .brand-header {
+.nav1 .brand-header {
   background-color: #fff;
 }
-.concept-b .brand-menu {
+.nav1 .brand-menu {
   float: left;
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
 }
-.concept-b .brand-menu:before,
-.concept-b .brand-menu:after {
+.nav1 .brand-menu:before,
+.nav1 .brand-menu:after {
   content: " ";
   display: table;
 }
-.concept-b .brand-menu:after {
+.nav1 .brand-menu:after {
   clear: both;
 }
-.concept-b .brand-menu li {
+.nav1 .brand-menu li {
   border-left: solid 1px #eaebee;
   padding: 0 ;
   float: left;
   min-height: 43px;
 }
-.concept-b .brand-menu li:last-child {
+.nav1 .brand-menu li:last-child {
   border-right: solid 1px #eaebee;
 }
-.concept-b .brand-menu li a {
+.nav1 .brand-menu li a {
   border-top: solid 5px #fff;
   padding: 6px 10px 5px 10px;
   display: block;
@@ -583,62 +507,62 @@ body,
   background-repeat: no-repeat;
   background-position: center center;
 }
-.concept-b .brand-menu li.intuit a {
+.nav1 .brand-menu li.intuit a {
   background-image: url(/assets/images/conceptB/intuit-logo.png);
   background-size: 63px 18px;
   width: 100px;
   position: relative;
   top: -2px;
 }
-.concept-b .brand-menu li.quickbooks a {
+.nav1 .brand-menu li.quickbooks a {
   background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);
   background-size: 83px 14px;
   width: 100px;
 }
-.concept-b .brand-menu li.quickbooks a:hover {
+.nav1 .brand-menu li.quickbooks a:hover {
   background-image: url(/assets/images/conceptB/quickbooks-logo.png);
 }
-.concept-b .brand-menu li.turbotax a {
+.nav1 .brand-menu li.turbotax a {
   background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);
   background-size: 68px 14px;
   width: 90px;
 }
-.concept-b .brand-menu li.turbotax a:hover {
+.nav1 .brand-menu li.turbotax a:hover {
   background-image: url(/assets/images/conceptB/turbotax-logo.png);
 }
-.concept-b .brand-menu li.mint a {
+.nav1 .brand-menu li.mint a {
   background-image: url(/assets/images/conceptB/mint-logo-gray.png);
   background-size: 40px 16px;
   width: 65px;
 }
-.concept-b .brand-menu li.mint a:hover {
+.nav1 .brand-menu li.mint a:hover {
   background-image: url(/assets/images/conceptB/mint-logo.png);
 }
-.concept-b.intuit .brand-menu li.intuit {
+.nav1.intuit .brand-menu li.intuit {
   display: none;
 }
-.concept-b.intuit .brand-menu li.quickbooks a {
+.nav1.intuit .brand-menu li.quickbooks a {
   background-image: url(/assets/images/conceptB/quickbooks-logo.png);
 }
-.concept-b.intuit .brand-menu li.quickbooks a:hover {
+.nav1.intuit .brand-menu li.quickbooks a:hover {
   background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);
 }
-.concept-b.intuit .brand-menu li.turbotax a {
+.nav1.intuit .brand-menu li.turbotax a {
   background-image: url(/assets/images/conceptB/turbotax-logo.png);
 }
-.concept-b.intuit .brand-menu li.turbotax a:hover {
+.nav1.intuit .brand-menu li.turbotax a:hover {
   background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);
 }
-.concept-b.intuit .brand-menu li.mint a {
+.nav1.intuit .brand-menu li.mint a {
   background-image: url(/assets/images/conceptB/mint-logo.png);
 }
-.concept-b.intuit .brand-menu li.mint a:hover {
+.nav1.intuit .brand-menu li.mint a:hover {
   background-image: url(/assets/images/conceptB/mint-logo-gray.png);
 }
-.concept-b.intuit .safe-secure {
+.nav1.intuit .safe-secure {
   display: none;
 }
-.concept-b .safe-secure {
+.nav1 .safe-secure {
   float: right;
   display: block;
   line-height: 43px;
@@ -647,7 +571,7 @@ body,
   cursor: pointer;
   color: #0077c5;
 }
-.concept-b .safe-secure img {
+.nav1 .safe-secure img {
   height: 17px;
   width: 15px;
   display: inline-block;
@@ -655,25 +579,25 @@ body,
   position: relative;
   top: -2px;
 }
-.concept-b .intuit-menu {
+.nav1 .intuit-menu {
   display: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
   float: right;
 }
-.concept-b .intuit-menu:before,
-.concept-b .intuit-menu:after {
+.nav1 .intuit-menu:before,
+.nav1 .intuit-menu:after {
   content: " ";
   display: table;
 }
-.concept-b .intuit-menu:after {
+.nav1 .intuit-menu:after {
   clear: both;
 }
-.concept-b .intuit-menu li {
+.nav1 .intuit-menu li {
   float: left;
 }
-.concept-b .intuit-menu li a.icon {
+.nav1 .intuit-menu li a.icon {
   display: block;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -681,24 +605,24 @@ body,
   height: 40px;
   width: 35px;
 }
-.concept-b .intuit-menu li a.icon.cart {
+.nav1 .intuit-menu li a.icon.cart {
   background-image: url(../images/conceptB/cart-blue-40x34.png);
   background-size: 20px 17px;
 }
-.concept-b .intuit-menu li a.icon.globe {
+.nav1 .intuit-menu li a.icon.globe {
   background-image: url(../images/conceptB/globe-blue-34x34.png);
   background-size: 17px 17px;
 }
-.concept-b .intuit-menu li a.icon.lock {
+.nav1 .intuit-menu li a.icon.lock {
   background-image: url(../images/lock-blue-45x51.png);
   background-size: 15px 17px;
 }
-.concept-b .intuit-menu li .signup {
+.nav1 .intuit-menu li .signup {
   font-weight: 600;
   display: inline-block;
   margin: 12px 10px 0 15px;
 }
-.concept-b .intuit-menu li .btn-primary {
+.nav1 .intuit-menu li .btn-primary {
   background-color: #ff8000;
   border-color: #ff8000;
   text-transform: uppercase;
@@ -706,36 +630,36 @@ body,
   margin-left: 15px;
   padding: 5px 12px;
 }
-.concept-b.intuit .intuit-menu {
+.nav1.intuit .intuit-menu {
   display: block;
 }
-.concept-b .page-footer {
+.nav1 .page-footer {
   background-color: #eaebee;
   border-top: solid 5px #d2d4da;
   border-bottom: solid 10px #0077c5;
   padding: 30px 0;
   font-size: 12px;
 }
-.concept-b .page-footer ul {
+.nav1 .page-footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.concept-b .page-footer ul:before,
-.concept-b .page-footer ul:after {
+.nav1 .page-footer ul:before,
+.nav1 .page-footer ul:after {
   content: " ";
   display: table;
 }
-.concept-b .page-footer ul:after {
+.nav1 .page-footer ul:after {
   clear: both;
 }
-.concept-b .page-footer ul li {
+.nav1 .page-footer ul li {
   float: left;
 }
-.concept-b .page-footer ul.social li {
+.nav1 .page-footer ul.social li {
   margin-right: 10px;
 }
-.concept-b .page-footer ul.social li a {
+.nav1 .page-footer ul.social li a {
   display: block;
   padding: 3px 8px 0 8px;
   background-color: #fff;
@@ -744,10 +668,10 @@ body,
   color: #0077c5;
   text-decoration: none;
 }
-.concept-b .page-footer .intuit-logo-wrap {
+.nav1 .page-footer .intuit-logo-wrap {
   margin-bottom: 15px;
 }
-.concept-b .page-footer .intuit-logo-wrap img {
+.nav1 .page-footer .intuit-logo-wrap img {
   height: 18px;
   width: 63px;
   position: relative;
@@ -755,81 +679,92 @@ body,
   display: inline-block;
   margin-right: 5px;
 }
-.concept-b .page-footer .intuit-logo-wrap span {
+.nav1 .page-footer .intuit-logo-wrap span {
   font-weight: 600;
   font-size: 14px;
   color: #39393c;
 }
-.concept-b .page-footer .page-footer-center {
+.nav1 .page-footer .page-footer-center {
   text-align: center;
   padding-top: 5px;
 }
-.concept-b .page-footer .page-footer-right {
+.nav1 .page-footer .page-footer-right {
   float: right;
 }
-.concept-b .page-footer .page-footer-right ul {
+.nav1 .page-footer .page-footer-right ul {
   margin-bottom: 15px;
 }
-.concept-b .page-footer .page-footer-right ul li a {
+.nav1 .page-footer .page-footer-right ul li a {
   display: inline-block;
   margin: 0 8px;
 }
-.concept-b .page-footer .page-footer-right ul li:before {
+.nav1 .page-footer .page-footer-right ul li:before {
   content: "|";
   color: #0077c5;
 }
-.concept-b .page-footer .page-footer-right ul li:first-child:before {
+.nav1 .page-footer .page-footer-right ul li:first-child:before {
   content: "";
 }
-.concept-b .page-footer .page-footer-right img {
+.nav1 .page-footer .page-footer-right img {
   margin-right: 8px;
 }
-.concept-c {
+.nav2 {
   font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
-.concept-c .navbar {
-  height: 80px;
+.nav2 .brand-wrap {
+  float: left;
 }
-.concept-c.quickbooks .brand-menu li.quickbooks a,
-.concept-c.turbotax .brand-menu li.turbotax a,
-.concept-c.mint .brand-menu li.mint a {
+.nav2 .navbar-brand {
+  display: block;
+  background-image: url(/assets/images/intuit-logo-white-112x32.png);
+  background-repeat: no-repeat;
+  background-size: 56px 16px;
+  width: 100px;
+  min-height: 36px;
+  float: none;
+  padding: 0;
+  height: auto;
+}
+.nav2.quickbooks .brand-menu li.quickbooks a,
+.nav2.turbotax .brand-menu li.turbotax a,
+.nav2.mint .brand-menu li.mint a {
   background-color: #fff;
 }
-.concept-c .brand-menu li.quickbooks a:hover,
-.concept-c.quickbooks .brand-menu li.quickbooks a {
+.nav2 .brand-menu li.quickbooks a:hover,
+.nav2.quickbooks .brand-menu li.quickbooks a {
   background-image: url(/assets/images/conceptB/quickbooks-logo.png);
 }
-.concept-c .brand-menu li.turbotax a:hover,
-.concept-c.turbotax .brand-menu li.turbotax a {
+.nav2 .brand-menu li.turbotax a:hover,
+.nav2.turbotax .brand-menu li.turbotax a {
   background-image: url(/assets/images/conceptB/turbotax-logo.png);
 }
-.concept-c .brand-menu li.mint a:hover,
-.concept-c.mint .brand-menu li.mint a {
+.nav2 .brand-menu li.mint a:hover,
+.nav2.mint .brand-menu li.mint a {
   background-image: url(/assets/images/conceptB/mint-logo.png);
 }
-.concept-c .brand-header {
+.nav2 .brand-header {
   background-color: #0077c5;
 }
-.concept-c .brand-menu {
+.nav2 .brand-menu {
   float: right;
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
 }
-.concept-c .brand-menu:before,
-.concept-c .brand-menu:after {
+.nav2 .brand-menu:before,
+.nav2 .brand-menu:after {
   content: " ";
   display: table;
 }
-.concept-c .brand-menu:after {
+.nav2 .brand-menu:after {
   clear: both;
 }
-.concept-c .brand-menu li {
+.nav2 .brand-menu li {
   padding: 0 ;
   float: left;
 }
-.concept-c .brand-menu li a {
+.nav2 .brand-menu li a {
   padding: 6px 20px 5px 20px;
   display: block;
   text-decoration: none;
@@ -838,25 +773,103 @@ body,
   background-position: center center;
   line-height: 25px;
 }
-.concept-c .brand-menu li.intuit a {
+.nav2 .brand-menu li a:hover {
+  background-color: #fff;
+}
+.nav2 .brand-menu li.intuit a {
   background-image: url(/assets/images/conceptB/intuit-logo.png);
   background-size: 63px 18px;
   width: 100px;
   position: relative;
   top: -2px;
 }
-.concept-c .brand-menu li.quickbooks a {
+.nav2 .brand-menu li.quickbooks a {
   background-image: url(/assets/images/conceptC/quickbooks-logo-white.png);
   background-size: 92px 15px;
   width: 122px;
 }
-.concept-c .brand-menu li.turbotax a {
+.nav2 .brand-menu li.turbotax a {
   background-image: url(/assets/images/conceptC/turbotax-logo-white.png);
   background-size: 75px 15px;
   width: 105px;
 }
-.concept-c .brand-menu li.mint a {
+.nav2 .brand-menu li.mint a {
   background-image: url(/assets/images/conceptC/mint-logo-white.png);
   background-size: 44px 17px;
   width: 74px;
+}
+.secondary-nav {
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.secondary-nav .navbar {
+  height: 50px;
+}
+.secondary-nav .brand-wrap {
+  height: 50px;
+  border-left: solid 1px #cccccc;
+  margin-left: 20px;
+  padding-left: 20px;
+  float: left;
+}
+.secondary-nav .navbar-brand {
+  display: block;
+  height: 37px;
+  width: 176px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: none;
+}
+.secondary-nav .navbar-nav > li > a {
+  padding: 8px 10px 0 10px;
+  cursor: pointer;
+}
+.secondary-nav .navbar-nav > li > a:hover {
+  color: inherit;
+}
+.secondary-nav .navbar-nav {
+  margin-top: 2px;
+}
+.secondary-nav .navbar-collapse .btn {
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.secondary-nav .brand-wrap,
+.secondary-nav .navbar-collapse {
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+.secondary-nav .navbar-toggle {
+  margin-top: 7px;
+}
+.secondary-nav .btn {
+  padding: 6px 15px;
+}
+.secondary-nav .btn-primary {
+  color: #fff;
+  background-color: #ff8000;
+  border-color: #ff8000;
+  border-radius: 4px;
+}
+.secondary-nav .btn-primary .fa {
+  margin-right: 8px;
+}
+.secondary-nav.quickbooks .navbar-brand {
+  background-image: url('../images/conceptA/qb-logo.png');
+}
+.secondary-nav.quickbooks .navbar-collapse .btn {
+  margin-top: 3px;
+}
+.secondary-nav.quickbooks .btn-primary {
+  background-color: #2c9e1c;
+  border-color: #2c9e1c;
+}
+.secondary-nav.turbotax .navbar-brand {
+  background-image: url('../images/conceptA/tt-logo.png');
+}
+.secondary-nav.turbotax .btn {
+  padding: 6px 25px;
+}
+.secondary-nav.mint .navbar-brand {
+  background-image: url('../images/conceptA/mint-logo.png');
 }

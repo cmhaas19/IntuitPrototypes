@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ["assets/less/modules"]
+          paths: ["assets/less/modules","assets/less/concepts"]
         },
         files: {
           "assets/css/prototype.css" : "assets/less/prototype.less"

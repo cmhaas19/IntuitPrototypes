@@ -1,13 +1,25 @@
 
-@import "variables.less";
-@import "mixins.less";
+@import "../modules/variables.less";
+@import "../modules/mixins.less";
 
-.concept-c {
+.nav2 {
 	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 
-	.navbar {
-		height: 80px;
+	.brand-wrap {
+		float: left;		
+	}
+
+	.navbar-brand {
+		display: block;
+		background-image: url(/assets/images/intuit-logo-white-112x32.png);
+		background-repeat: no-repeat;
+		background-size: 56px 16px;
+		width: 100px;
+		min-height: 36px;
+		float: none;
+		padding: 0;
+		height: auto;
 	}
 
 	&.quickbooks .brand-menu li.quickbooks a,
@@ -54,6 +66,10 @@
 				background-repeat: no-repeat;
 				background-position: center center;
 				line-height: 25px;
+
+				&:hover {
+					background-color: #fff;
+				}
 			}
 
 			&.intuit a {
@@ -82,8 +98,5 @@
 				width: 74px;
 			}
 		}
-	}
-
-	
+	}	
 }
-

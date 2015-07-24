@@ -4,7 +4,7 @@
     var modalCtrl = function ($scope, $modalInstance) {
         
         $scope.close = function(){
-            $modalInstance.close();
+            $modalInstance.dismiss('cancel');
         }
         
     };

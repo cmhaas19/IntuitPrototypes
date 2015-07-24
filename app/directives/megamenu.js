@@ -7,7 +7,8 @@
         return {
             restrict: 'AE',
             scope: {
-                toggleButton: '@'
+                toggleButton: '@',
+                header: '@'
             },
             controller: ['$scope', '$element', function ($scope, $element) {
                 
@@ -16,7 +17,7 @@
             }],
             link: function(scope, element, attrs) {
                 var $toggleButton = $(scope.toggleButton),
-                    $header = $(".page-header");
+                    $header = $(scope.header);
 
                 var positionMenu = function(){
                     var left = $toggleButton.position().left - 15,

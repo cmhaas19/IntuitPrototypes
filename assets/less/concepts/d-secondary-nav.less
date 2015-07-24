@@ -1,8 +1,8 @@
 
-@import "variables.less";
-@import "mixins.less";
+@import "../modules/variables.less";
+@import "../modules/mixins.less";
 
-.concept-a {
+.secondary-nav {
 	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 
@@ -67,13 +67,9 @@
 			margin-right: 8px;
 		}
 	}
-
-	.page-body {
-		
-	}
 }
 
-.concept-a.quickbooks {
+.secondary-nav.quickbooks {
 	.navbar-brand {
 		background-image: url('../images/conceptA/qb-logo.png');
 	}
@@ -86,7 +82,7 @@
 		border-color: @quickbooks-green;
 	}
 }
-.concept-a.turbotax {
+.secondary-nav.turbotax {
 	.navbar-brand {
 		background-image: url('../images/conceptA/tt-logo.png');
 	}
@@ -94,7 +90,7 @@
 		padding: 6px 25px;
 	}
 }
-.concept-a.mint {
+.secondary-nav.mint {
 	.navbar-brand {
 		background-image: url('../images/conceptA/mint-logo.png');
 	}
