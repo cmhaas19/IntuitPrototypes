@@ -20,7 +20,8 @@ body,
 .page {
 	position: relative;
 	overflow-y: auto;
-	margin-bottom: @footerHeight;	
+	padding-bottom: @footerHeight;
+	margin-bottom: -@footerHeight;
 }
 
 .page-header {
@@ -34,10 +35,6 @@ body,
 .page-body {
 	position: relative;
 	z-index: 90;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	background-position: center top;
 
 	img {
 		margin: 0 auto;

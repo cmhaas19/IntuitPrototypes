@@ -10,82 +10,125 @@
 		height: 80px;
 	}
 
-	&.quickbooks {
-		.navbar {
-			background-color: rgba(0, 0, 0, 0.7);
-		}
-		.navbar-brand {
-			background-image: url('../images/conceptA/qb-logo.png');
-		}
-		.navbar-collapse .btn {
-			margin-top: 3px;
-		}
-
-		.btn-primary {
-			background-color: @quickbooks-green;
-			border-color: @quickbooks-green;
-		}
-	}
-	&.turbotax {
-		.navbar-brand {
-			background-image: url('../images/conceptA/tt-logo.png');
-		}
-		.btn {
-			padding: 6px 25px;
-		}
-	}
-	&.mint {
-		.navbar-brand {
-			background-image: url('../images/conceptA/mint-logo.png');
-		}
+	&.quickbooks .brand-menu li.quickbooks a,
+	&.turbotax .brand-menu li.turbotax a,
+	&.mint .brand-menu li.mint a {
+		border-top-color: @blue20;
 	}
 
 	.brand-header {
 		background-color: #fff;
-		height: 50px;
 	}
 
 	.brand-menu {
 		float: left;
 		list-style-type: none;
 		padding-left: 0;
+		margin-bottom: 0;
 		.clearfix();
 
-		li {
-			border-top: solid 5px #fff;			
-			border-right: solid 1px #eaebee;
-			float: left;
+		li {						
+			border-left: solid 1px #eaebee;
+			padding: 0 ;
+			float: left; 
+			min-height: 43px;
 
-			&:first-child {
-				border-left: solid 1px #eaebee;
+			&:last-child {
+				border-right: solid 1px #eaebee;
 			}
 
 			a {
+				border-top: solid 5px #fff;
+				padding: 6px 10px 5px 10px;
 				display: block;
-				padding: 10px 20px 10px 20px;
 				text-decoration: none;
+				text-indent: -5000px;
+				background-repeat: no-repeat;
+				background-position: center center;
 			}
 
-			&.active {
-				border-top-color: @blue20;
+			&.intuit a {
+				background-image: url(/assets/images/conceptB/intuit-logo.png);
+				background-size: 63px 18px;
+				width: 100px;
+				position: relative;
+  				top: -2px;
 			}
+
+			&.quickbooks a {
+				background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);
+				background-size: 83px 14px;
+				width: 100px;
+
+				&:hover { background-image: url(/assets/images/conceptB/quickbooks-logo.png); }
+			}
+
+			&.turbotax a {
+				background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);
+				background-size: 68px 14px;
+				width: 90px;
+
+				&:hover { background-image: url(/assets/images/conceptB/turbotax-logo.png); }
+			}
+
+			&.mint a {
+				background-image: url(/assets/images/conceptB/mint-logo-gray.png);
+				background-size: 40px 16px;
+				width: 65px;
+
+				&:hover { background-image: url(/assets/images/conceptB/mint-logo.png); }
+			}
+		}
+	}
+
+	&.intuit {
+		.brand-menu li.intuit {
+			display: none;
+		}
+
+		.brand-menu li.quickbooks a { 
+			background-image: url(/assets/images/conceptB/quickbooks-logo.png); 
+			&:hover { background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);  }
+		}
+
+		.brand-menu li.turbotax a { 
+			background-image: url(/assets/images/conceptB/turbotax-logo.png); 
+			&:hover { background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);  }
+		}
+
+		.brand-menu li.mint a { 
+			background-image: url(/assets/images/conceptB/mint-logo.png); 
+			&:hover { background-image: url(/assets/images/conceptB/mint-logo-gray.png);  }
+		}
+
+		.safe-secure {
+			display: none;
 		}
 	}
 
 	.safe-secure {
 		float: right;
 		display: block;
-		padding: 10px 20px 10px 20px;
+		line-height: 43px;
+		position: relative;
+		text-decoration: none;
+		cursor: pointer;
+		color: @blue20;
 
-		.fa {
+		img {
+			height: 17px;
+			width: 15px;
+			display: inline-block;
 			margin-right: 10px;
+			position: relative;
+			top: -2px;
 		}
 	}
 
 	.page-footer {
 		background-color: #eaebee;
 		border-top: solid 5px #d2d4da;
-		border-bottom: solid 10px #0077c5;
+		border-bottom: solid 10px @blue20;
 		padding: 30px 0;
 		font-size: 12px;
 
@@ -105,20 +148,66 @@
 
 					a {
 						display: block;
-						padding: 3px 8px;
+						padding: 3px 8px 0 8px;
 						background-color: #fff;
 						font-size: 18px;
 						border-radius: 4px;
+						color: @blue20;
+						text-decoration: none;
 					}
 				}
 			}
 		}
 
+		.intuit-logo-wrap {
+			margin-bottom: 15px;
+			img {
+				height: 18px;
+				width: 63px;
+				position: relative;
+				top: -4px;
+				display: inline-block;
+				margin-right: 5px;
+			}
+			span {
+				font-weight: 600;
+				font-size: 14px;
+				color: #39393c;
+			}
+		}
+
+		.page-footer-center {
+			text-align: center;
+			padding-top: 5px;
+		}
+
 		.page-footer-right {
 			float: right;
+
+			ul {
+				margin-bottom: 15px;
+
+				li {
+					a {
+						display: inline-block;
+						margin: 0 8px;
+					}
+
+					&:before {
+						content: "|";
+						color: @blue20;
+					}
+
+					&:first-child:before {
+						content: "";
+					}
+				}
+			}
+
+			img {
+				margin-right: 8px;
+			}
 		}
 	}
-
-
 }
 

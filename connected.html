@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="prototypeApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="$root.title">Inuit - Common Elements Prototypes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/prototype.css">
+  </head>
+  <body ng-class="$root.bodyClass" ng-controller="prototypeCtrl as rootCtrl">
+
+    <div id="main">
+      <div class="view-container">
+        <div class="view-frame" ng-view>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer class="prototype-footer">
+      <nav>
+        <ul>
+          <li><a class="nav-concept-a" href="#/concept/a/quickbooks">A</a></li>
+          <li><a class="nav-concept-b" href="#/concept/b/quickbooks">B</a></li>
+          <li><a class="nav-concept-c" href="#">C</a></li>
+          <li><a class="nav-concept-d" href="#">D</a></li>
+          <li><a class="nav-concept-e" href="#">E</a></li>
+          <li><a class="nav-concept-home" href="/"><i class="fa fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="assets/vendor/jquery-2.1.4.min.js"></script> 
+    <script src="assets/vendor/angular.min.js"></script>
+    <script src="assets/vendor/angular-route.min.js"></script> 
+    <script src="assets/vendor/angular-animate.min.js"></script>     
+    <script src="assets/vendor/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+    <script src="app/prototypeApp.js"></script>
+    <script src="app/directives/megamenu.js"></script>
+    <script src="app/controllers/prototypeCtrl.js"></script>
+    
+  </body>
+</html>
