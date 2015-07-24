@@ -18,6 +18,10 @@
                 .when("/concept/b/quickbooks", { templateUrl: "/app/views/conceptB/quickbooks.html", title: 'Concept B - Quickbooks', bodyClass: 'concept-b quickbooks' })
                 .when("/concept/b/turbotax", { templateUrl: "/app/views/conceptB/turbotax.html", title: 'Concept B - TurboTax', bodyClass: 'concept-b turbotax' })
                 .when("/concept/b/mint", { templateUrl: "/app/views/conceptB/mint.html", title: 'Concept B - Mint', bodyClass: 'concept-b mint' })
+
+                .when("/concept/c/quickbooks", { templateUrl: "/app/views/conceptC/quickbooks.html", title: 'Concept C - Quickbooks', bodyClass: 'concept-c quickbooks' })
+                .when("/concept/c/turbotax", { templateUrl: "/app/views/conceptC/turbotax.html", title: 'Concept C - TurboTax', bodyClass: 'concept-c turbotax' })
+                .when("/concept/c/mint", { templateUrl: "/app/views/conceptC/mint.html", title: 'Concept C - Mint', bodyClass: 'concept-c mint' })
                 
                 .otherwise({ 
                     templateUrl: "/app/views/home.html", 

@@ -1,0 +1,89 @@
+
+@import "variables.less";
+@import "mixins.less";
+
+.concept-c {
+	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+
+	.navbar {
+		height: 80px;
+	}
+
+	&.quickbooks .brand-menu li.quickbooks a,
+	&.turbotax .brand-menu li.turbotax a,
+	&.mint .brand-menu li.mint a {
+		background-color: #fff;
+	}
+
+	.brand-menu li.quickbooks a:hover,
+	&.quickbooks .brand-menu li.quickbooks a {
+		background-image: url(/assets/images/conceptB/quickbooks-logo.png);
+	}
+
+	.brand-menu li.turbotax a:hover,
+	&.turbotax .brand-menu li.turbotax a {
+		background-image: url(/assets/images/conceptB/turbotax-logo.png);
+	}
+
+	.brand-menu li.mint a:hover,
+	&.mint .brand-menu li.mint a {
+		background-image: url(/assets/images/conceptB/mint-logo.png);
+	}
+
+	.brand-header {
+		background-color: @blue20;
+	}
+
+	.brand-menu {
+		float: right;
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		.clearfix();
+
+		li {						
+			padding: 0 ;
+			float: left; 
+
+			a {
+				padding: 6px 20px 5px 20px;
+				display: block;
+				text-decoration: none;
+				text-indent: -5000px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				line-height: 25px;
+			}
+
+			&.intuit a {
+				background-image: url(/assets/images/conceptB/intuit-logo.png);
+				background-size: 63px 18px;
+				width: 100px;
+				position: relative;
+  				top: -2px;
+			}
+
+			&.quickbooks a {
+				background-image: url(/assets/images/conceptC/quickbooks-logo-white.png);
+				background-size: 92px 15px;
+				width: 122px;
+			}
+
+			&.turbotax a {
+				background-image: url(/assets/images/conceptC/turbotax-logo-white.png);
+				background-size: 75px 15px;
+				width: 105px;
+			}
+
+			&.mint a {
+				background-image: url(/assets/images/conceptC/mint-logo-white.png);
+				background-size: 44px 17px;
+				width: 74px;
+			}
+		}
+	}
+
+	
+}
+
