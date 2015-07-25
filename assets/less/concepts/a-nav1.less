@@ -2,19 +2,48 @@
 @import "../modules/variables.less";
 @import "../modules/mixins.less";
 
+&.quickbooks .nav1 .brand-menu li.quickbooks a,
+&.turbotax .nav1 .brand-menu li.turbotax a,
+&.mint .nav1 .brand-menu li.mint a {
+	border-top-color: @blue20;
+}
+
+&.intuit .nav1 {
+	.brand-menu li.intuit {
+		display: none;
+	}
+
+	.brand-menu li.quickbooks a { 
+		background-image: url(/assets/images/conceptB/quickbooks-logo.png); 
+		&:hover { background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);  }
+	}
+
+	.brand-menu li.turbotax a { 
+		background-image: url(/assets/images/conceptB/turbotax-logo.png); 
+		&:hover { background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);  }
+	}
+
+	.brand-menu li.mint a { 
+		background-image: url(/assets/images/conceptB/mint-logo.png); 
+		&:hover { background-image: url(/assets/images/conceptB/mint-logo-gray.png);  }
+	}
+
+	.safe-secure {
+		display: none;
+	}
+
+	.intuit-menu {
+		display: block;
+	}
+}
+
 .nav1 {
 	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 
 	.navbar {
 		height: 80px;
-	}
-
-	&.quickbooks .brand-menu li.quickbooks a,
-	&.turbotax .brand-menu li.turbotax a,
-	&.mint .brand-menu li.mint a {
-		border-top-color: @blue20;
-	}
+	}	
 
 	.brand-header {
 		background-color: #fff;
@@ -78,31 +107,6 @@
 
 				&:hover { background-image: url(/assets/images/conceptB/mint-logo.png); }
 			}
-		}
-	}
-
-	&.intuit {
-		.brand-menu li.intuit {
-			display: none;
-		}
-
-		.brand-menu li.quickbooks a { 
-			background-image: url(/assets/images/conceptB/quickbooks-logo.png); 
-			&:hover { background-image: url(/assets/images/conceptB/quickbooks-logo-gray.png);  }
-		}
-
-		.brand-menu li.turbotax a { 
-			background-image: url(/assets/images/conceptB/turbotax-logo.png); 
-			&:hover { background-image: url(/assets/images/conceptB/turbotax-logo-gray.png);  }
-		}
-
-		.brand-menu li.mint a { 
-			background-image: url(/assets/images/conceptB/mint-logo.png); 
-			&:hover { background-image: url(/assets/images/conceptB/mint-logo-gray.png);  }
-		}
-
-		.safe-secure {
-			display: none;
 		}
 	}
 
@@ -177,9 +181,7 @@
 		}
 	}
 
-	&.intuit .intuit-menu {
-		display: block;
-	}
+	
 
 	.page-footer {
 		background-color: #eaebee;

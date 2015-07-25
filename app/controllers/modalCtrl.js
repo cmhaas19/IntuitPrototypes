@@ -11,4 +11,4 @@
 
     module.controller("modalCtrl", ['$scope', '$modalInstance', modalCtrl]);
 
-}(angular.module("prototype.Controllers")));
+}(angular.module("intuit.Controllers")));

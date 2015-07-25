@@ -45,4 +45,4 @@
 
     module.directive("floatingFooter", floatingFooter);
 
-}(angular.module("prototype.Directives")));
+}(angular.module("intuit.Directives")));

@@ -69,4 +69,4 @@
 
     module.directive("megamenu", megamenu);
 
-}(angular.module("prototype.Directives")));
+}(angular.module("intuit.Directives")));

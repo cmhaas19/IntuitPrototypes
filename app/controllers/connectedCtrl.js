@@ -1,7 +1,7 @@
 
 (function (module) {
 
-    var prototypeCtrl = function ($scope, $q, $timeout, $modal) {
+    var connectedCtrl = function ($scope, $q, $timeout, $modal) {
         var vm = this;
 
         vm.openSecurityModal = function(){
@@ -13,6 +13,6 @@
         
     };
 
-    module.controller("prototypeCtrl", ['$scope', '$q', '$timeout', '$modal', prototypeCtrl]);
+    module.controller("connectedCtrl", ['$scope', '$q', '$timeout', '$modal', connectedCtrl]);
 
-}(angular.module("prototype.Controllers")));
+}(angular.module("intuit.Controllers")));

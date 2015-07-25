@@ -136,6 +136,16 @@ body,
 	width: 100%;
 	height: @footerHeight;
 
+	&.aspirational {
+		nav ul li {
+			width: 10%;
+
+			&:last-child {
+				width: 10%;
+			}
+		}
+	}
+
 	nav {
 		width: 100%;
 
@@ -195,16 +205,15 @@ body,
 	}
 }
 
-
-
-
-
-
 .menu-a .prototype-footer a.nav-concept-a,
 .menu-b .prototype-footer a.nav-concept-b,
 .menu-c .prototype-footer a.nav-concept-c,
 .menu-d .prototype-footer a.nav-concept-d,
-.menu-e .prototype-footer a.nav-concept-e {
+.menu-e .prototype-footer a.nav-concept-e,
+.menu-f .prototype-footer a.nav-concept-f,
+.menu-g .prototype-footer a.nav-concept-g,
+.menu-h .prototype-footer a.nav-concept-h,
+.menu-i .prototype-footer a.nav-concept-i {
 	border-top: solid 5px #f34866;
 }
 
@@ -230,5 +239,16 @@ body,
 		padding-right: 0;
 		padding-left: 0;
 	}
+}
+
+.carousel .carousel-control.right,
+.carousel .carousel-control.left {
+	background-image: none;
+} 
+.carousel .carousel-control:hover {
+	opacity: 1;
+}
+.carousel .carousel-control .glyphicon {
+	display: none;
 }
 

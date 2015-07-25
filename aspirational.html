@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="connectedApp">
+<html lang="en" ng-app="aspirationalApp">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title ng-bind="$root.title">Light connective tissue</title>
+    <title ng-bind="$root.title">Aspirational</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">    
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/prototype.css">
   </head>
-  <body ng-class="$root.bodyClass" ng-controller="connectedCtrl as rootCtrl">
+  <body ng-class="$root.bodyClass" ng-controller="aspirationalCtrl as rootCtrl">
 
     <div id="main">
       <div class="view-container">
@@ -21,14 +21,18 @@
       </div>
     </div>
 
-    <footer class="prototype-footer">
+    <footer class="prototype-footer aspirational">
       <nav>
         <ul>
-          <li><a class="nav-concept-a" href="#/concept/a/quickbooks">A</a></li>
-          <li><a class="nav-concept-b" href="#/concept/b/quickbooks">B</a></li>
-          <li><a class="nav-concept-c" href="#/concept/c/quickbooks">C</a></li>
-          <li><a class="nav-concept-d" href="#/concept/d/quickbooks">D</a></li>
-          <li><a class="nav-concept-e" href="#/concept/e/quickbooks">E</a></li>
+          <li><a class="nav-concept-a" href="#/concept/a">A</a></li>
+          <li><a class="nav-concept-b" href="#/concept/b">B</a></li>
+          <li><a class="nav-concept-c" href="#/concept/c">C</a></li>
+          <li><a class="nav-concept-d" href="#/concept/d">D</a></li>
+          <li><a class="nav-concept-e" href="#/concept/e">E</a></li>
+          <li><a class="nav-concept-f" href="#/concept/f">F</a></li>
+          <li><a class="nav-concept-g" href="#/concept/g">G</a></li>
+          <li><a class="nav-concept-h" href="#/concept/h">H</a></li>
+          <li><a class="nav-concept-i" href="#/concept/i">I</a></li>
           <li>
             <a class="nav-concept-home" href="/">
               <span class="bar"></span>
@@ -42,14 +46,12 @@
     <script src="assets/vendor/jquery-2.1.4.min.js"></script> 
     <script src="assets/vendor/angular.min.js"></script>
     <script src="assets/vendor/angular-route.min.js"></script> 
-    <script src="assets/vendor/angular-animate.min.js"></script>     
+    <script src="assets/vendor/angular-animate.min.js"></script>
+    <script src="assets/vendor/angular-touch.min.js"></script>     
     <script src="assets/vendor/ui-bootstrap-tpls-0.13.1.min.js"></script>
 
-    <script src="app/connectedApp.js"></script>
-    <script src="app/directives/megamenu.js"></script>
-    <script src="app/directives/floating-footer.js"></script>
-    <script src="app/controllers/connectedCtrl.js"></script>
-    <script src="app/controllers/modalCtrl.js"></script>
+    <script src="app/aspirationalApp.js"></script>
+    <script src="app/controllers/aspirationalCtrl.js"></script>
     
   </body>
 </html>
