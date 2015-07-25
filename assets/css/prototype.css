@@ -71,7 +71,7 @@
     opacity: 0;
   }
 }
-.hvr-grow {
+.no-touch .hvr-grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -85,9 +85,9 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
+.no-touch .hvr-grow:hover,
+.no-touch .hvr-grow:focus,
+.no-touch .hvr-grow:active {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
