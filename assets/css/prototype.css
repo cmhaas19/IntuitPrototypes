@@ -71,6 +71,26 @@
     opacity: 0;
   }
 }
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 html,
 body {
   color: #333;
@@ -285,7 +305,12 @@ body,
 }
 .landing {
   background-color: #000;
-  margin-top: 10%;
+}
+.landing .button-wrap {
+  position: absolute;
+  top: 50%;
+  margin-top: -156px;
+  width: 100%;
 }
 .landing .button {
   display: block;
@@ -714,17 +739,28 @@ body,
 }
 .nav2 .brand-wrap {
   float: left;
+  position: relative;
+  top: 8px;
 }
 .nav2 .navbar-brand {
   display: block;
   background-image: url(/assets/images/intuit-logo-white-112x32.png);
   background-repeat: no-repeat;
   background-size: 56px 16px;
-  width: 100px;
+  width: 65px;
   min-height: 36px;
-  float: none;
+  float: left;
   padding: 0;
   height: auto;
+}
+.nav2 .tagline {
+  float: left;
+  color: #b8cfe9;
+  font-size: 14px;
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  position: relative;
+  top: 2px;
 }
 .nav2.quickbooks .brand-menu li.quickbooks a,
 .nav2.turbotax .brand-menu li.turbotax a,
@@ -772,6 +808,10 @@ body,
   background-repeat: no-repeat;
   background-position: center center;
   line-height: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 .nav2 .brand-menu li a:hover {
   background-color: #fff;

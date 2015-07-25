@@ -1,7 +1,17 @@
 
+@import "mixins.less";
+
+
 .landing {
 	background-color: #000;
-	margin-top: 10%;
+
+	.button-wrap {
+		//height: 252px;
+		position: absolute;
+		top: 50%;
+		margin-top: -156px;
+		width: 100%;
+	}
 
 	.button {
 		display: block;
@@ -13,6 +23,7 @@
 		padding: 25px;
 		text-decoration: none;
 		font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
 
 
 		h2 {
