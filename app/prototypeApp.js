@@ -22,6 +22,10 @@
                 .when("/concept/d/quickbooks", { templateUrl: "/app/views/d-secondary-nav/quickbooks.html", title: 'Secondary Nav - Quickbooks', bodyClass: 'menu-d secondary-nav quickbooks' })
                 .when("/concept/d/turbotax", { templateUrl: "/app/views/d-secondary-nav/turbotax.html", title: 'Secondary Nav - TurboTax', bodyClass: 'menu-d secondary-nav turbotax' })
                 .when("/concept/d/mint", { templateUrl: "/app/views/d-secondary-nav/mint.html", title: 'Secondary Nav - Mint', bodyClass: 'menu-d secondary-nav mint' })                
+
+                .when("/concept/e/quickbooks", { templateUrl: "/app/views/e-footer/quickbooks.html", title: 'Footer - Quickbooks', bodyClass: 'menu-e footer quickbooks' })
+                .when("/concept/e/turbotax", { templateUrl: "/app/views/e-footer/turbotax.html", title: 'Footer - TurboTax', bodyClass: 'menu-e footer turbotax' })
+                .when("/concept/e/mint", { templateUrl: "/app/views/e-footer/mint.html", title: 'Footer - Mint', bodyClass: 'menu-e footer mint' })                
                 
                 .otherwise({ 
                     templateUrl: "/app/views/home.html", 

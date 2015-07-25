@@ -913,3 +913,121 @@ body,
 .secondary-nav.mint .navbar-brand {
   background-image: url('../images/conceptA/mint-logo.png');
 }
+.floating-footer {
+  background-color: #f0f0f0;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: -9px;
+  z-index: 1000;
+  -webkit-transition: bottom 0.5s ease;
+  -moz-transition: bottom 0.5s ease;
+  -ms-transition: bottom 0.5s ease;
+  -o-transition: bottom 0.5s ease;
+}
+.floating-footer.open {
+  bottom: 51px;
+}
+.floating-footer .inside {
+  position: relative;
+  text-align: center;
+}
+.floating-footer .inside ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 27px;
+  margin-left: -50px;
+  display: inline-block;
+}
+.floating-footer .inside ul:before,
+.floating-footer .inside ul:after {
+  content: " ";
+  display: table;
+}
+.floating-footer .inside ul:after {
+  clear: both;
+}
+.floating-footer .inside ul li {
+  float: left;
+  position: relative;
+}
+.floating-footer .inside ul li.explore {
+  color: #0077c5;
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-right: 25px;
+}
+.floating-footer .inside ul li.explore img {
+  height: 17px;
+  width: 58px;
+  position: relative;
+  top: -4px;
+}
+.floating-footer .inside ul li.brand {
+  margin-right: 30px;
+}
+.floating-footer .inside ul li.brand:last-child {
+  margin-right: 0;
+}
+.floating-footer .inside ul li.brand a {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.floating-footer .inside ul li.brand.turbotax a {
+  background-image: url(/assets/images/conceptB/turbotax-logo.png);
+  width: 118px;
+  height: 24px;
+}
+.floating-footer .inside ul li.brand.quickbooks a {
+  background-image: url(/assets/images/conceptB/quickbooks-logo.png);
+  width: 146px;
+  height: 24px;
+}
+.floating-footer .inside ul li.brand.mint a {
+  background-image: url(/assets/images/conceptB/mint-logo.png);
+  width: 68px;
+  height: 27px;
+  position: relative;
+  top: -2px;
+}
+.floating-footer .inside .close-button {
+  height: 30px;
+  width: 30px;
+  border: solid 1px #9b9b9b;
+  border-radius: 50%;
+  color: #9b9b9b;
+  padding-top: 4px;
+  text-align: center;
+  display: block;
+  background-color: #f0f0f0;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.floating-footer .inside .close-button:hover {
+  background-color: #9b9b9b;
+  color: #f0f0f0;
+}
+@media (min-width: 992px) {
+  .floating-footer .inside ul {
+    margin-left: -60px;
+  }
+  .floating-footer .inside ul li.explore {
+    margin-right: 40px;
+  }
+  .floating-footer .inside ul li.brand {
+    margin-right: 55px;
+  }
+  .floating-footer .inside .close-button {
+    right: 25px;
+  }
+}

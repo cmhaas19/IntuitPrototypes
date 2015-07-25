@@ -2,4 +2,134 @@
 @import "../modules/variables.less";
 @import "../modules/mixins.less";
 
-body {}
+.footer {
+
+}
+
+@floaterHeight: 80px;
+
+.floating-footer {
+	background-color: #f0f0f0;
+	height: @floaterHeight;
+	width: 100%;
+	position: fixed;
+	bottom: @footerHeight - (@floaterHeight - 20);
+	z-index: 1000;
+	.transition(bottom 0.5s ease);
+
+	&.open {
+		bottom: @footerHeight;
+	}
+
+	.inside {
+		position: relative;
+		text-align: center;
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			margin-top: 27px;
+			margin-left: -50px;
+			display: inline-block;
+			.clearfix();
+
+			li {
+				float: left;
+				position: relative;
+
+				&.explore {
+					color: @blue20;
+					font-family: @avenir;
+					font-size: 20px;
+					font-weight: 200;
+					margin-right: 25px;
+
+					img {
+						height: 17px;
+						width: 58px;
+						position: relative;
+						top: -4px;
+					}
+				}
+
+				&.brand {
+					margin-right: 30px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					a {
+						background-repeat: no-repeat;
+						background-size: cover;
+						display: block;
+					}
+
+					&.turbotax a {
+						background-image: url(/assets/images/conceptB/turbotax-logo.png);						
+						width: 118px;
+						height: 24px;						
+					}
+
+					&.quickbooks a {
+						background-image: url(/assets/images/conceptB/quickbooks-logo.png);						
+						width: 146px;
+						height: 24px;						
+					}
+
+					&.mint a {
+						background-image: url(/assets/images/conceptB/mint-logo.png);						
+						width: 68px;
+						height: 27px;
+						position: relative;
+						top: -2px;						
+					}
+				}
+			}
+		}
+
+		.close-button {
+			height: 30px;
+			width: 30px;
+			border: solid 1px #9b9b9b;
+			border-radius: 50%;
+			color: #9b9b9b;
+			padding-top: 4px;
+			text-align: center;
+			display: block;
+			background-color: #f0f0f0;
+			position: absolute;
+			right: 15px;
+			top: 25px;
+			cursor: pointer;
+			text-decoration: none;
+			.transition(all 0.2s ease);
+
+			&:hover {
+				background-color: #9b9b9b;
+				color: #f0f0f0;
+			}
+		}
+	}	
+}
+
+@media (min-width: 992px) {
+	.floating-footer .inside ul {
+		margin-left: -60px;
+	}
+
+	.floating-footer .inside ul li {
+		&.explore {
+			margin-right: 40px;
+		}
+		&.brand {
+			margin-right: 55px;
+		}
+	}
+
+	.floating-footer .inside .close-button {
+		right: 25px;
+	}
+}
+
