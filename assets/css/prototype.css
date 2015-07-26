@@ -267,7 +267,10 @@ body,
   text-align: center;
   text-decoration: none;
   line-height: 40px;
-  transition: border-color 0.2s ease-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out;
 }
 .prototype-footer nav ul li a.active,
 .prototype-footer nav ul li a:hover {
@@ -322,6 +325,9 @@ body,
 }
 .carousel .carousel-control .glyphicon {
   display: none;
+}
+.carousel-indicators .active {
+  background-color: #0077c5;
 }
 .landing {
   background-color: #000;

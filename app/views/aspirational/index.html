@@ -2,9 +2,9 @@
 <div class="page" ng-controller="aspirationalCtrl as ctrl">
 	<div class="page-body">
 		<carousel no-wrap="ctrl.noWrapSlides" interval="ctrl.slideInterval">
-	      <slide ng-repeat="slide in slides">
-	        <img ng-src="{{slide}}" style="margin:auto;">        
-	      </slide>
+			<slide ng-repeat="slide in slides">
+				<img ng-src="{{slide}}" style="margin:auto;" class="img-responsive">	        
+			</slide>
 	    </carousel>
 	</div>	
 </div>

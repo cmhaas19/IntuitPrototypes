@@ -180,7 +180,7 @@ body,
 					text-align: center;
 					text-decoration: none;
 					line-height: 40px;
-					transition: border-color 0.2s ease-out;
+					.transition(border-color 0.2s ease-in-out);
 
 					&.active,
 					&:hover {
@@ -251,4 +251,9 @@ body,
 .carousel .carousel-control .glyphicon {
 	display: none;
 }
+
+.carousel-indicators .active {
+  background-color: @blue20;
+}
+
 

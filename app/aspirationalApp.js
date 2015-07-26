@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    angular.module("intuit.Directives", []);
+    angular.module("intuit.Directives", ["ui.bootstrap"]);
     angular.module("intuit.Controllers", ["ui.bootstrap"]);
 
     angular.module("aspirationalApp", ["ngRoute", "ngAnimate", "ngTouch", "ui.bootstrap", "intuit.Directives", "intuit.Controllers"])
