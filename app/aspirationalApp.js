@@ -9,7 +9,7 @@
     angular.module("aspirationalApp", ["ngRoute", "ngAnimate", "ngTouch", "ui.bootstrap", "intuit.Directives", "intuit.Controllers"])
         .config(['$routeProvider', function ($routeProvider) {
 
-            var templateUrl = "/app/views/aspirational/index.html";
+            var templateUrl = "/app/views/aspirational/carousel.html";
 
             $routeProvider
                 .when("/concept/a", {
@@ -32,14 +32,10 @@
                     ]
                 })
                 .when("/concept/c", {
-                    templateUrl: templateUrl,
+                    templateUrl: "/app/views/aspirational/iframe.html",
                     title: 'C',
                     bodyClass: "menu-c",
-                    slides: [
-                        '/assets/images/aspirational/C1-Intuit-TellUs-v5-1.jpg',
-                        '/assets/images/aspirational/C2-Intuit-TellUs-v5-2.jpg',
-                        '/assets/images/aspirational/C3-Intuit-TellUs-v5-3.jpg'
-                    ]
+                    iframeSrc: "http://s.codepen.io/team/xdp/debug/cc8e41be430ffcfd843d407b6386bcfe"
                 })
                 .when("/concept/d", {
                     templateUrl: templateUrl,
@@ -106,6 +102,7 @@
                 $rootScope.title = 'Aspirational | Concept ' + title;
                 $rootScope.bodyClass = currentRoute.bodyClass;
                 $rootScope.slides = currentRoute.slides;
+                $rootScope.iframeSrc = currentRoute.iframeSrc;
             });
         }]);
 })();

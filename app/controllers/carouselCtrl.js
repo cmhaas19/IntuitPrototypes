@@ -1,7 +1,7 @@
 
 (function (module) {
 
-    var aspirationalCtrl = function ($scope, $rootScope) {
+    var carouselCtrl = function ($scope, $rootScope) {
         var vm = this;
 
         // Cycle through slides (at end, start back at begining)
@@ -11,6 +11,6 @@
 		vm.slideInterval = -1;         
     };
 
-    module.controller("aspirationalCtrl", ['$scope', '$rootScope', aspirationalCtrl]);
+    module.controller("carouselCtrl", ['$scope', '$rootScope', carouselCtrl]);
 
 }(angular.module("intuit.Controllers")));
