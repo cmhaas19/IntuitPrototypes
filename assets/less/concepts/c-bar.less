@@ -2,4 +2,330 @@
 @import "../modules/variables.less";
 @import "../modules/mixins.less";
 
-body {}
+
+.bar {
+	font-family: @avenir;
+	font-size: 14px;
+
+	.brand-wrap {
+		float: left;	
+		position: relative;
+		top: 8px;
+	}
+
+	.navbar-brand {
+		display: block;
+		background-image: url(/assets/images/conceptB/intuit-logo.png);
+		background-repeat: no-repeat;
+		background-size: 57px 16px;
+		width: 65px;
+		min-height: 36px;
+		float: left;
+		padding: 0;
+		height: auto;
+	}
+
+	
+
+	.brand-header {
+		background-color: #fff;
+	}
+
+	.page-body {
+		position: relative;
+	}	
+}
+
+.jumbo-dropdown {
+	margin-top: 8px;
+	display: block;
+	cursor: pointer;
+	color: @blue20;
+	font-family: @avenir;
+	font-size: 16px;
+
+	.dd-label {		
+		font-weight: 200;
+	}
+
+	.dd-value {
+		font-weight: 800;
+	}
+
+	.dd-arrow {
+		.transition(all 0.8s ease-in-out);
+		.font-awesome();
+
+		&:before {			
+			content: "\f107";
+		}
+	}
+
+	&.open .dd-arrow {
+		.transform(rotate(180deg));
+	}
+}
+
+.dropdown {
+	position: absolute;
+	z-index: 95;
+	top: -5000px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 60px 0 40px 0;
+	.transition(top 0.8s ease-in-out);
+
+	.dropdown-footer {
+		margin-top: 125px;
+		text-align: center;
+
+		ul {
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style-type: none;
+			display: inline-block;
+			.clearfix();
+
+			li {
+				float: left;
+				color: #fff;
+				font-weight: 200;
+
+				a {
+					color: inherit;
+					padding: 0 10px;
+				}
+
+				&:after {
+					content: "|";
+
+				}
+
+				&:last-child:after {
+					content: "";
+				}
+			}
+		}
+	}
+}
+
+.dropdown-concept-one {
+	background: rgba(0, 0, 0, 0.84);
+
+	.dropdown-header {
+		margin-bottom: 100px;
+
+		.title {
+			font-family: @avenir;
+			font-size: 42px;
+			font-weight: 200;
+			color: #fff;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}	
+
+	.product {
+		font-family: @avenir;
+		color: #fff;
+		text-align: center;
+
+		.logo {
+			display: inline-block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-bottom: 25px;
+		}
+
+		.tagline {
+			font-family: inherit;
+			font-weight: 200;
+			font-size: 26px;
+			margin-top: 0;
+			margin-bottom: 35px;
+
+			strong {
+				font-weight: 800;
+				display: block;
+			}
+		}
+
+		.product-button {
+			display: inline-block;
+			padding: 0 45px;
+			line-height: 35px;
+			color: #fff;
+			font-family: inherit;
+			font-weight: 400;
+			font-size: 16px;
+			border: solid 1px @mint-green10;
+			position: relative;
+			text-decoration: none;
+
+			.fa {
+				margin-left: 5px;
+				position: relative;
+				top: 0;
+			}
+		}
+
+		&.mint {
+			.logo {
+				background-image: url(/assets/images/concept-bar/mint-logo-white.png);
+				width: 72px;
+				height: 28px;
+			}
+		}
+		&.turbotax {
+			.logo {
+				background-image: url(/assets/images/concept-bar/turbotax-logo-white.png);
+				width: 134px;
+				height: 28px;
+			}
+			.product-button {
+				border-color: #d42b1e;
+			}
+		}
+		&.quickbooks {
+			.logo {
+				background-image: url(/assets/images/concept-bar/qb-logo-white.png);
+				width: 152px;
+				height: 28px;
+				position: relative;;
+				top: 2px;
+			}
+			.product-button {
+				border-color: @quickbooks-green;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.dropdown-concept-one .dropdown-header .title {
+		font-size: 48px;
+	}
+}
+
+
+.dropdown-concept-two {
+	background: rgba(0, 119, 197, 0.93);
+	padding-top: 30px;
+
+	.dropdown-header {
+		margin-bottom: 30px;
+
+		.title {
+			font-family: @avenir;
+			font-size: 48px;
+			font-weight: 800;
+			color: #fff;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.product {
+		margin-bottom: 30px;
+		display: block;
+		font-family: @avenir;
+
+		.logo {
+			display: block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-bottom: 7px;
+		}
+
+		.tagline {
+			font-family: inherit;
+			font-weight: 200;
+			font-size: 18px;
+			color: #999999;
+			margin-top: 0;
+
+			strong {
+				font-weight: 800;
+			}
+		}
+
+		&.quickbooks .logo {
+			background-image: url(/assets/images/conceptB/quickbooks-logo.png);
+			height: 20px;
+			width: 122px;
+		}
+
+		&.turbotax .logo {
+			background-image: url(/assets/images/conceptB/turbotax-logo.png);
+			height: 20px;
+			width: 101px;
+		}
+
+		&.mint .logo {
+			background-image: url(/assets/images/concept-bar/mint-logo.png);
+			height: 20px;
+			width: 65px;
+		}
+	}
+
+	.modal-content {
+		width: 99%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.modal-content-left,
+	.modal-content-right {
+		float: left;
+	}
+
+	.modal-content-left {
+		width: 45%;
+	}
+
+	.modal-content-right {
+		width: 55%;
+		padding: 25px 25px 10px 30px;
+		position: relative;
+
+		h3 {
+			color: #000;
+			font-size: 36px;
+			margin-top: 0;
+		}
+
+		p {
+			color: #656565;
+			font-size: 16px;
+			line-height: 26px;
+			margin-bottom: 30px;
+		}
+	}
+
+	a.next {
+		position: absolute;
+		bottom: 10px;
+		right: 25px;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: @blue20;
+
+		.fa {
+			margin-left: 3px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.dropdown-concept-two .modal-content {
+		width: 90%
+	}
+}
+
+@media (min-width: 1200px) {
+	.dropdown-concept-two .modal-content {
+		width: 80%
+	}
+}
+

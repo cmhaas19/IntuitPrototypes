@@ -2,6 +2,27 @@
 @import "../modules/variables.less";
 @import "../modules/mixins.less";
 
+.quickbooks .nav2 .brand-menu li.quickbooks a,
+.turbotax .nav2 .brand-menu li.turbotax a,
+.mint .nav2 .brand-menu li.mint a {
+	background-color: #fff;
+}
+
+.nav2 .brand-menu li.quickbooks a:hover,
+.quickbooks .nav2 .brand-menu li.quickbooks a {
+	background-image: url(/assets/images/conceptB/quickbooks-logo.png);
+}
+
+.nav2 .brand-menu li.turbotax a:hover,
+.turbotax .nav2 .brand-menu li.turbotax a {
+	background-image: url(/assets/images/conceptB/turbotax-logo.png);
+}
+
+.nav2 .brand-menu li.mint a:hover,
+.mint .nav2 .brand-menu li.mint a {
+	background-image: url(/assets/images/conceptB/mint-logo.png);
+}
+
 .nav2 {
 	font-family: @avenir;
 	font-size: 14px;
@@ -32,27 +53,6 @@
 		font-weight: 200;
 		position: relative;
 		top: 2px;
-	}
-
-	&.quickbooks .brand-menu li.quickbooks a,
-	&.turbotax .brand-menu li.turbotax a,
-	&.mint .brand-menu li.mint a {
-		background-color: #fff;
-	}
-
-	.brand-menu li.quickbooks a:hover,
-	&.quickbooks .brand-menu li.quickbooks a {
-		background-image: url(/assets/images/conceptB/quickbooks-logo.png);
-	}
-
-	.brand-menu li.turbotax a:hover,
-	&.turbotax .brand-menu li.turbotax a {
-		background-image: url(/assets/images/conceptB/turbotax-logo.png);
-	}
-
-	.brand-menu li.mint a:hover,
-	&.mint .brand-menu li.mint a {
-		background-image: url(/assets/images/conceptB/mint-logo.png);
 	}
 
 	.brand-header {
