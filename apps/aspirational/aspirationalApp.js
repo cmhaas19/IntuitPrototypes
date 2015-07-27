@@ -9,7 +9,7 @@
     angular.module("aspirationalApp", ["ngRoute", "ngAnimate", "ngTouch", "ui.bootstrap", "intuit.Directives", "intuit.Controllers"])
         .config(['$routeProvider', function ($routeProvider) {
 
-            var templateUrl = "/app/views/aspirational/carousel.html";
+            var templateUrl = "/apps/aspirational/views/carousel.html";
 
             $routeProvider
                 .when("/concept/a", {
@@ -32,7 +32,7 @@
                     ]
                 })
                 .when("/concept/c", {
-                    templateUrl: "/app/views/aspirational/iframe.html",
+                    templateUrl: "/apps/aspirational/views/iframe.html",
                     title: 'C',
                     bodyClass: "menu-c",
                     iframeSrc: "http://s.codepen.io/team/xdp/debug/cc8e41be430ffcfd843d407b6386bcfe"
@@ -91,7 +91,7 @@
                     ]
                 })                
                 .otherwise({ 
-                    templateUrl: "/app/views/home.html"
+                    redirectTo: "/" 
                 });
 
         }])
@@ -101,8 +101,6 @@
 
                 $rootScope.title = 'Aspirational | Concept ' + title;
                 $rootScope.bodyClass = currentRoute.bodyClass;
-                $rootScope.slides = currentRoute.slides;
-                $rootScope.iframeSrc = currentRoute.iframeSrc;
             });
         }]);
 })();

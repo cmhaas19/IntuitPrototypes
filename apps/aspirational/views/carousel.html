@@ -2,7 +2,7 @@
 <div class="page" ng-controller="carouselCtrl as ctrl">
 	<div class="page-body">
 		<carousel no-wrap="ctrl.noWrapSlides" interval="ctrl.slideInterval">
-			<slide ng-repeat="slide in slides">
+			<slide ng-repeat="slide in ctrl.slides">
 				<img ng-src="{{slide}}" style="margin:auto;" class="img-responsive">	        
 			</slide>
 	    </carousel>
