@@ -42,7 +42,8 @@
                     title: 'D',
                     bodyClass: "menu-d",
                     slides: [
-                        '/assets/images/aspirational/D-Intuit-Customer-Problems-v3.jpg'
+                        '/assets/images/aspirational/D-Intuit-Customer-Problems-v4.jpg',
+                        '/assets/images/aspirational/D-Intuit-Customer-Problems-v4-hover.jpg'
                     ]
                 })
                 .when("/concept/e", {
