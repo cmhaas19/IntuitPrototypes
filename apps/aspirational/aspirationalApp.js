@@ -51,7 +51,8 @@
                     title: 'E',
                     bodyClass: "menu-e",
                     slides: [
-                        '/assets/images/aspirational/E-Intuit-ThoughtLeaderRevised_AF-06.jpg'
+                        '/assets/images/aspirational/E-Intuit-ThoughtLeaderRevised_AF-06.jpg',
+                        '/assets/images/aspirational/Aspirational-E.png'
                     ]
                 }) 
                 .when("/concept/f", {
@@ -88,7 +89,8 @@
                     bodyClass: "menu-i",
                     slides: [
                         '/assets/images/aspirational/I1-Intuit-HumantoHuman-v4a.jpg',
-                        '/assets/images/aspirational/I2-Intuit-HumantoHuman-v4b.jpg'
+                        '/assets/images/aspirational/I2-Intuit-HumantoHuman-v4b.jpg',
+                        '/assets/images/aspirational/Aspirational-I.png'
                     ]
                 })                
                 .otherwise({ 
