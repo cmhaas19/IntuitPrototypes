@@ -666,11 +666,11 @@ body,
   width: 35px;
 }
 .nav1 .intuit-menu li a.icon.cart {
-  background-image: url(../images/conceptB/cart-blue-40x34.png);
+  background-image: url(../images/cart-blue-40x34.png);
   background-size: 20px 17px;
 }
 .nav1 .intuit-menu li a.icon.globe {
-  background-image: url(../images/conceptB/globe-blue-34x34.png);
+  background-image: url(../images/globe-blue-34x34.png);
   background-size: 17px 17px;
 }
 .nav1 .intuit-menu li a.icon.lock {
@@ -1243,7 +1243,7 @@ body,
   margin-bottom: 20px;
 }
 .dropdown-concept-three .product.turbotax .icon {
-  background-image: url(/assets/images/concept-bar/icon-wallet.png);
+  background-image: url(/assets/images/icon-wallet.png);
   height: 34px;
   width: 38px;
   margin-top: 22px;
@@ -1255,7 +1255,7 @@ body,
   width: 100px;
 }
 .dropdown-concept-three .product.quickbooks .icon {
-  background-image: url(/assets/images/concept-bar/icon-home.png);
+  background-image: url(/assets/images/icon-home.png);
   height: 40px;
   width: 40px;
   margin-bottom: 27px;
@@ -1266,7 +1266,7 @@ body,
   width: 121px;
 }
 .dropdown-concept-three .product.mint .icon {
-  background-image: url(/assets/images/concept-bar/icon-graph.png);
+  background-image: url(/assets/images/icon-graph.png);
   height: 43px;
   width: 43px;
   margin-bottom: 23px;

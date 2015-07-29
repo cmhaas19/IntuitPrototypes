@@ -5,6 +5,10 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    jsonfilelist: {
+      files: ['assets/images/**/*.png']
+    },
+
     watch: {
       options: {
         livereload: true
@@ -45,14 +49,26 @@ module.exports = function(grunt) {
           "assets/css/prototype.css" : "assets/less/prototype.less"
         }
       }
+    },
+
+    folder_list: {
+      default_options: {
+        options: {
+          files: true,
+          folders: false
+        },
+        files: {
+          'imagelist.json': ['assets/images/**']
+        }  
+      }      
     }
 
-  });
+  });  
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('dev', ['less', 'connect', 'watch']);
+  grunt.registerTask('dev', ['folder_list', 'less', 'connect', 'watch']);
 
-  grunt.registerTask('compile', ['less']);
+  grunt.registerTask('compile', ['folder_list', 'less']);
 
 };
