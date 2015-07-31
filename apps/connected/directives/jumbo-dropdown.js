@@ -23,20 +23,32 @@
                     closedTop = ($dropdownTarget.outerHeight() + 36) * -1, // 36 is the height of the header (I'm cheating)
                     isOpen = false;
 
+                var swiper = new Swiper ('.swiper-container', {
+                    direction: 'vertical',
+                    loop: true,
+                    autoplay: 5000
+                });
+
                 $dropdownTarget.css({ top: closedTop });
 
                 element.on("click", function(){
+
                     if(isOpen){
                         $dropdownTarget.css({ top: closedTop });
                         $label.text(scope.closedText);
+                        swiper.startAutoplay();
                     } else {
                         $dropdownTarget.css({ top: $pageHeader.outerHeight() });
                         $label.text(scope.openText);
+                        swiper.stopAutoplay();
                     }
                     isOpen = !isOpen;
                     element.toggleClass("open");
                     $dropdownTarget.toggleClass("open");
-                });                
+
+                });
+
+                                
             }
         }        
     };

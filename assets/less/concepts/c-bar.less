@@ -43,9 +43,19 @@
 	color: @blue20;
 	font-family: @avenir;
 	font-size: 16px;
+	.clearfix();
+
+	.dd-label,
+	.dd-text,
+	.swiper-container,
+	.dd-arrow {
+		float: left;
+	}
 
 	.dd-label {		
 		font-weight: 200;
+		display: inline-block;
+		margin-right: 5px;
 	}
 
 	.dd-value {
@@ -53,6 +63,9 @@
 	}
 
 	.dd-arrow {
+		margin-left: 5px;
+		position: relative;
+		top: 3px;
 		.transition(all 0.8s ease-in-out);
 		.font-awesome();
 
@@ -63,6 +76,15 @@
 
 	&.open .dd-arrow {
 		.transform(rotate(180deg));
+	}
+
+	.swiper-container {
+	    width: auto;
+	    height: 30px;
+	}
+
+	.swiper-slide {
+		display: inline-block;
 	}
 }
 

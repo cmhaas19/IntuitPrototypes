@@ -904,13 +904,32 @@ body,
   font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
+.jumbo-dropdown:before,
+.jumbo-dropdown:after {
+  content: " ";
+  display: table;
+}
+.jumbo-dropdown:after {
+  clear: both;
+}
+.jumbo-dropdown .dd-label,
+.jumbo-dropdown .dd-text,
+.jumbo-dropdown .swiper-container,
+.jumbo-dropdown .dd-arrow {
+  float: left;
+}
 .jumbo-dropdown .dd-label {
   font-weight: 200;
+  display: inline-block;
+  margin-right: 5px;
 }
 .jumbo-dropdown .dd-value {
   font-weight: 800;
 }
 .jumbo-dropdown .dd-arrow {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   -ms-transition: all 0.8s ease-in-out;
@@ -931,6 +950,13 @@ body,
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+.jumbo-dropdown .swiper-container {
+  width: auto;
+  height: 30px;
+}
+.jumbo-dropdown .swiper-slide {
+  display: inline-block;
 }
 .dropdown {
   position: absolute;
