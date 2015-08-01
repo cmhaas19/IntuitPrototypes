@@ -21,12 +21,20 @@
                     $pageHeader = element.closest(".page-header"),
                     $label = element.find(".dd-label"),
                     closedTop = ($dropdownTarget.outerHeight() + 36) * -1, // 36 is the height of the header (I'm cheating)
-                    isOpen = false;
+                    isOpen = false,
+                    slideCount = 1;
 
                 var swiper = new Swiper ('.swiper-container', {
                     direction: 'vertical',
-                    loop: true,
-                    autoplay: 5000
+                    loop: false,
+                    roundLengths: true,
+                    autoplay: 2000,
+                    onSlideChangeEnd: function(slider){
+                        slideCount++;
+                        if(slideCount >= 3){
+                            slider.stopAutoplay();
+                        }
+                    }
                 });
 
                 $dropdownTarget.css({ top: closedTop });
@@ -36,11 +44,11 @@
                     if(isOpen){
                         $dropdownTarget.css({ top: closedTop });
                         $label.text(scope.closedText);
-                        swiper.startAutoplay();
+                        //swiper.startAutoplay();
                     } else {
                         $dropdownTarget.css({ top: $pageHeader.outerHeight() });
                         $label.text(scope.openText);
-                        swiper.stopAutoplay();
+                        //swiper.stopAutoplay();
                     }
                     isOpen = !isOpen;
                     element.toggleClass("open");
