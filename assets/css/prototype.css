@@ -287,15 +287,45 @@ body,
 .prototype-footer nav ul li .bar:first-child {
   margin-top: 15px;
 }
-.menu-a .prototype-footer a.nav-concept-a,
-.menu-b .prototype-footer a.nav-concept-b,
-.menu-c .prototype-footer a.nav-concept-c,
-.menu-d .prototype-footer a.nav-concept-d,
-.menu-e .prototype-footer a.nav-concept-e,
-.menu-f .prototype-footer a.nav-concept-f,
-.menu-g .prototype-footer a.nav-concept-g,
-.menu-h .prototype-footer a.nav-concept-h,
-.menu-i .prototype-footer a.nav-concept-i {
+.has-mobile .prototype-footer.connected nav ul li {
+  width: 15%;
+}
+.has-mobile .prototype-footer.connected nav ul li:last-child {
+  width: 10%;
+}
+.nav-concept-a-mobile,
+.nav-concept-b-mobile,
+.nav-concept-c-mobile,
+.nav-concept-d-mobile,
+.nav-concept-e-mobile {
+  display: none;
+}
+.nav-concept-a-mobile img,
+.nav-concept-b-mobile img,
+.nav-concept-c-mobile img,
+.nav-concept-d-mobile img,
+.nav-concept-e-mobile img {
+  width: 9px;
+  height: 15px;
+  top: -2px;
+  position: relative;
+}
+.menu-a .prototype-footer .nav-concept-a-mobile,
+.menu-b .prototype-footer .nav-concept-b-mobile,
+.menu-c .prototype-footer .nav-concept-c-mobile,
+.menu-d .prototype-footer .nav-concept-d-mobile,
+.menu-e .prototype-footer .nav-concept-e-mobile {
+  display: block;
+}
+.menu-a .prototype-footer .nav-concept-a a,
+.menu-b .prototype-footer .nav-concept-b a,
+.menu-c .prototype-footer .nav-concept-c a,
+.menu-d .prototype-footer .nav-concept-d a,
+.menu-e .prototype-footer .nav-concept-e a,
+.menu-f .prototype-footer .nav-concept-f a,
+.menu-g .prototype-footer .nav-concept-g a,
+.menu-h .prototype-footer .nav-concept-h a,
+.menu-i .prototype-footer .nav-concept-i a {
   border-top: solid 5px #f34866;
 }
 .qb-green {
@@ -1236,6 +1266,10 @@ body,
   float: left;
   margin-left: -30px;
   text-decoration: none;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -ms-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
 }
 .dropdown-concept-three .product:first-child {
   margin-left: 25px;
@@ -1311,13 +1345,16 @@ body,
 @media (min-width: 992px) {
   .dropdown-concept-three .modal-content {
     width: 90%
-		padding: 60px 80px;
+			padding: 60px 80px;
   }
   .dropdown-concept-three .dropdown-header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .dropdown-concept-three .dropdown-header .title {
     font-size: 42px;
+  }
+  .dropdown-concept-three .products {
+    margin-bottom: 30px;
   }
   .dropdown-concept-three .product {
     height: 280px;

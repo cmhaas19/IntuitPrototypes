@@ -391,11 +391,11 @@
 		float: left;
 		margin-left: -30px;
 		text-decoration: none;
+		.transition(all 1.5s ease-in-out);
 
 		&:first-child {
 			margin-left: 25px;
 		}
-
 
 		.logo {
 			display: block;
@@ -488,48 +488,54 @@
 }
 
 @media (min-width: 992px) {
-	.dropdown-concept-three .modal-content {
-		width: 90%
-		padding: 60px 80px;
-	}
-
-	.dropdown-concept-three .dropdown-header {
-		margin-bottom: 60px;
-
-		.title {
-			font-size: 42px;
-		}
-	}
-
-	.dropdown-concept-three .product {
-		height: 280px;
-		width: 280px;
-		margin-left: -50px;
-
-		&:first-child {
-			margin-left: 50px;
+	.dropdown-concept-three {
+		.modal-content {
+			width: 90%
+			padding: 60px 80px;
 		}
 
-		.tagline {
-			margin-top: 60px;
-		}
-
-		.icon {
-			margin-top: 40px;
+		.dropdown-header {
 			margin-bottom: 40px;
+
+			.title {
+				font-size: 42px;
+			}
 		}
 
-		&.turbotax .icon {
-			margin-top: 40px;
-			margin-bottom: 48px;
+		.products {
+			margin-bottom: 30px;
 		}
 
-		&.quickbooks .icon {
-			margin-bottom: 44px;
-		}
+		.product {
+			height: 280px;
+			width: 280px;
+			margin-left: -50px;
 
-		&.mint .icon {
-			margin-bottom: 40px;
+			&:first-child {
+				margin-left: 50px;
+			}
+
+			.tagline {
+				margin-top: 60px;
+			}
+
+			.icon {
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+
+			&.turbotax .icon {
+				margin-top: 40px;
+				margin-bottom: 48px;
+			}
+
+			&.quickbooks .icon {
+				margin-bottom: 44px;
+			}
+
+			&.mint .icon {
+				margin-bottom: 40px;
+			}
 		}
 	}
 }

@@ -28,7 +28,7 @@
                     direction: 'vertical',
                     loop: false,
                     roundLengths: true,
-                    autoplay: 2000,
+                    autoplay: 1500,
                     onSlideChangeEnd: function(slider){
                         slideCount++;
                         if(slideCount >= 3){
@@ -42,18 +42,20 @@
                 element.on("click", function(){
 
                     if(isOpen){
+                        element.one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
+                            $label.text(scope.closedText);
+                            $dropdownTarget.removeClass("open");
+                        });
                         $dropdownTarget.css({ top: closedTop });
-                        $label.text(scope.closedText);
-                        //swiper.startAutoplay();
                     } else {
+                        element.one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function(){
+                            $label.text(scope.openText);
+                            $dropdownTarget.addClass("open");
+                        });
                         $dropdownTarget.css({ top: $pageHeader.outerHeight() });
-                        $label.text(scope.openText);
-                        //swiper.stopAutoplay();
                     }
                     isOpen = !isOpen;
                     element.toggleClass("open");
-                    $dropdownTarget.toggleClass("open");
-
                 });
 
                                 
