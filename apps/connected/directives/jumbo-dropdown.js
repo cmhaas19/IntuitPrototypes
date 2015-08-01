@@ -28,7 +28,7 @@
                     direction: 'vertical',
                     loop: false,
                     roundLengths: true,
-                    autoplay: 1500,
+                    autoplay: 1000,
                     onSlideChangeEnd: function(slider){
                         slideCount++;
                         if(slideCount >= 3){
