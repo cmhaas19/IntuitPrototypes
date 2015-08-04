@@ -35,7 +35,7 @@
                     templateUrl: "/apps/aspirational/views/iframe.html",
                     title: 'C',
                     bodyClass: "menu-c",
-                    iframeSrc: "http://s.codepen.io/team/xdp/debug/cc8e41be430ffcfd843d407b6386bcfe"
+                    iframeSrc: "http://s.codepen.io/team/xdp/debug/4cfe53abcedac42ae62483c498316175"
                 })
                 .when("/concept/d", {
                     templateUrl: templateUrl,
@@ -56,16 +56,10 @@
                     ]
                 }) 
                 .when("/concept/f", {
-                    templateUrl: templateUrl,
+                    templateUrl: "/apps/aspirational/views/iframe.html",
                     title: 'F',
                     bodyClass: "menu-f",
-                    slides: [
-                        '/assets/images/aspirational/F1-Intuit-360-v3a.jpg',
-                        '/assets/images/aspirational/F2-Intuit-360-v3b.jpg',
-                        '/assets/images/aspirational/F3-Intuit-360-v3c.jpg',
-                        '/assets/images/aspirational/F4-Intuit-360-v3d.jpg',
-                        '/assets/images/aspirational/F5-Intuit-360-v3e.jpg'
-                    ]
+                    iframeSrc: "http://s.codepen.io/team/xdp/debug/2616fee4f6e883aac9423199ba30ad9a"
                 })            
                 .when("/concept/g", {
                     templateUrl: templateUrl,
