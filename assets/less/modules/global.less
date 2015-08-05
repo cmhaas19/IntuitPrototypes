@@ -13,15 +13,20 @@ body,
 #main,
 .view-container,
 .view-frame,
-.page {
+.page,
+.page-iframe {
 	height: 100%;
 }
 
-.page {
+.page,
+.page-iframe {
 	position: relative;
-	overflow-y: auto;
 	padding-bottom: @footerHeight;
 	margin-bottom: -@footerHeight;
+}
+
+.page {
+	overflow-y: auto;
 }
 
 .page-header {

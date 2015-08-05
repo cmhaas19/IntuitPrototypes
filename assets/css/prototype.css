@@ -101,14 +101,18 @@ body,
 #main,
 .view-container,
 .view-frame,
-.page {
+.page,
+.page-iframe {
   height: 100%;
 }
-.page {
+.page,
+.page-iframe {
   position: relative;
-  overflow-y: auto;
   padding-bottom: 51px;
   margin-bottom: -51px;
+}
+.page {
+  overflow-y: auto;
 }
 .page-header {
   position: relative;
