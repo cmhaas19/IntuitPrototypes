@@ -114,6 +114,10 @@ body,
 .page {
   overflow-y: auto;
 }
+.page-iframe {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
 .page-header {
   position: relative;
   z-index: 100;
