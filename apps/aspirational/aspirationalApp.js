@@ -59,7 +59,7 @@
                     templateUrl: "/apps/aspirational/views/iframe.html",
                     title: 'F',
                     bodyClass: "menu-f",
-                    iframeSrc: "http://s.codepen.io/team/xdp/debug/2616fee4f6e883aac9423199ba30ad9a"
+                    iframeSrc: "http://s.codepen.io/team/xdp/debug/a9415a24a128d2acbd8b2be664c0b308"
                 })            
                 .when("/concept/g", {
                     templateUrl: templateUrl,
