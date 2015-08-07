@@ -105,12 +105,6 @@ body,
 .page-iframe {
   height: 100%;
 }
-.page,
-.page-iframe {
-  position: relative;
-  padding-bottom: 51px;
-  margin-bottom: -51px;
-}
 .page {
   overflow-y: auto;
 }
