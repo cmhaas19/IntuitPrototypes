@@ -105,12 +105,10 @@ body,
 .page-iframe {
   height: 100%;
 }
-.page {
-  overflow-y: auto;
-}
+.page,
 .page-iframe {
   -webkit-overflow-scrolling: touch !important;
-  overflow-y: scroll !important;
+  overflow-y: auto !important;
 }
 .page-header {
   position: relative;
