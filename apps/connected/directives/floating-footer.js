@@ -26,6 +26,10 @@
                     scope.open();
                 });
 
+                element.closest(".page").one("touchmove", function(){
+                    scope.open();
+                });
+
                 element.on('mouseenter', function(){
                     scope.open();
                 });
